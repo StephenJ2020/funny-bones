@@ -1,7 +1,8 @@
 ![Banner Image](assets/images/rm-banner-image.jpg)   
 
-This project was created for Code Institute's Halloween 'Spookathon' - October 2021 by Funny Bones team.   
+This project was created for Code Institute's Halloween 'Spookathon' - October 2021 by the Funny Bones team.   
 The main goal of the Funny Bones Interactive Adventure Story Book is to familiarize children with popular Halloween stories in a fun, play-based way. 
+
 In this interactive app, children are the creators of their own story!
 
 [Funny Bones - Live Site]()  
@@ -45,7 +46,7 @@ In this interactive app, children are the creators of their own story!
 
 
 ## Target audience
-Parents with young children aged approx. 7-12 years old  
+Parents with young children aged 7-12.
 
 
 ## User Stories
@@ -100,7 +101,7 @@ Parents with young children aged approx. 7-12 years old
 ------  
 * Wireframes were created using the [Balsamiq](https://balsamiq.com/wireframes/) software.  
 ![Funny Bones](assets/images/rm-funny-bones-wf.png)       
-[View PDF](./assets/images/rm-funny-bones wf.pdf)    
+[View PDF](assets/images/rm-funny-bones wf.pdf)    
   
   
 #### [Back to top](<#table-of-content>)  
