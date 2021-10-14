@@ -101,7 +101,7 @@ Parents with young children aged 7-12.
 ------  
 * Wireframes were created using the [Balsamiq](https://balsamiq.com/wireframes/) software.  
 ![Funny Bones](assets/images/rm-funny-bones-wf.png)       
-[View PDF](assets/images/rm-funny-bones wf.pdf)    
+[Wireframes](assets/images/rm-funny-bones wf.pdf)    
   
   
 #### [Back to top](<#table-of-content>)  
