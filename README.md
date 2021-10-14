@@ -161,7 +161,7 @@
 This project was deployed to GitHub Pages following these steps:  
   
 1. Login to GitHub  
-2. Locate the following GitHub Repository name in the Search Bar: StephenJ2020/CI-MS2-Self-Guided-Celbridge  
+2. Locate the following GitHub Repository name in the Search Bar: StephenJ2020/funny-bones  
 3. Click into the repository to view more details
 4. Click on Settings, located on the menu tab just below the repository name  
 5. On the Menu options on the left select the second last option "Pages"
@@ -169,7 +169,7 @@ This project was deployed to GitHub Pages following these steps:
 7. Select /(root) in the tab that is next to Branch selector     
 8. Click Save and page will automatically refresh
 9. You will now see a link to the deployed website   
-10. To view the deployed website [click here!](https://stephenj2020.github.io/CI-MS2-Self-Guided-Celbridge/)  
+10. To view the deployed website [click here!]()  
   
   
 ### Making a clone to run locally  
