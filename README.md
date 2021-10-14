@@ -1,15 +1,22 @@
-![Banner Image](assets/images/rm-banner-image.jpg)     
+![Banner Image](assets/images/rm-banner-image.jpg)   
+
+This project was created for Code Institute's Halloween 'Spookathon' - October 2021 by Funny Bones team.   
+The main goal of the Funny Bones Interactive Adventure Story Book is to familiarize children with popular Halloween stories in a fun, play-based way. 
+In this interactive app, children are the creators of their own story!
+
+[Funny Bones - Live Site]()  
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)    
   
   
-[Funny Bones - Live Site]()  
+
   
 # Funny Bones  
 ------  
 ## Table of Contents  
 ------  
-  
-* Strategy
+
+* Target audience
 * User Stories
 * Client Goals
 * Scope
@@ -37,45 +44,29 @@
 * Acknowledgements
 
 
-## Strategy
-------
+## Target audience
+Parents with young children aged approx. 7-12 years old  
+
+
+## User Stories
+**As a first time user I want to be able to:**  
+* Navigate the site intuitively and easily access all available features from different screen size devices.
+* Understand the game instructions easily.
+* Develop learning skills in young children.
+* Have a positive and fun experience.  
+* Be able to complete the game to win.
+
    
-   
-**The main goal of the Funny Bones site is to:**  
-  
-*   
-*   
-*   
-*   
-   
-   
-## Primary USER -  Parents with young children aged approx. 7-12 years old  
-------  
-**As a first time user I would like to:**  
-*   
-*   
-*   
-*   
-*    
-*   
-**Nice to have:**  
-  
-*   
-*   
-  
-  
-**As a repeat user I would like to:**  
-*   
-*   
-*   
+**As a returning user I want to be able to:**  
+* Play the game without any detours.
 *   
 *   
   
   
 ## Site Owners Goals   
 ------  
-*    
-*   
+* A simple minimalistic app that is easy to use on all devices.
+* To create a fun game, so users return to play again.
 *   
   
   
@@ -124,7 +115,7 @@
   
 #### Imagery  
 ------  
-**(imagery chose goes here)**  
+**(imagery choice goes here)**  
   
   
 #### Core Features  
