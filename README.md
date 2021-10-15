@@ -10,53 +10,52 @@ In this interactive app, children are the creators of their own story!
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)    
   
   
-
-  
 # Funny Bones  
 ------  
-## Table of Contents  
-------  
+## [Table of Contents](#table-of-contents)
 
-* Target audience
-* User Stories
-* Client Goals
-* Scope
-* Features & Functional Requirements
-* Structure
-* Content and Structure requirements
-* Skeleton
-* Wireframes
-* Design Inspiration and color choices
-* Typography
-* Imagery
-* Core Features
-* Future Implementations
-* Bugs & Fixes
-* Implementation
-* Deployment
-* To deploy to GitHub Pages
-* Forking the GitHub Repository
-* Making a Local Clone
-* Testing
-* Technologies Used
-* Languages Used
-* Frameworks, Libraries, Programs & Platforms Used
-* Credits
-* Acknowledgements
+- [UX](#ux)
+  * [Strategy](#strategy)
+  * [User Stories](#user-stories)
+  * [Scope](#scope)
+  * [Structure](#structure)
+  * [Skeleton](#skeleton)
+  * [Surface](#surface)
+    + [Color Scheme](#color-scheme)
+    + [Typography](#typography)
+    + [Imagery](#imagery)
+- [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries, Programs & Platforms Used:](#frameworks--libraries--programs---platforms-used-)
+- [Features](#features)
+  * [Implemented Features](#implemented-features)
+  * [Future Features](#future-features)
+- [Bugs & Fixes](#bugs---fixes)
+- [Deployment](#deployment)
+  * [Deployment Steps](#deployment-steps)
+  * [Making a clone to run locally](#making-a-clone-to-run-locally)
+  * [How to Fork the respository](#how-to-fork-the-respository)
+  * [Making a Local Clone](#making-a-local-clone)
+- [Testing](#testing)
+  * [Code Validity](#code-validity)
+  * [Testing User Stories](#testing-user-stories)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
 
 # UX
 ___
 ## Strategy
 
-* ## Project Goals
+* **Project Goals**
     * To create a fully-optimized responsive interactive story book app for flawless user experience on all devices. 
     * To create a platform that allows all users to learn popular Halloween stories in a fun, play-based way. 
 
-* ## Business Goals   
+* **Business Goals**   
     * A simple minimalistic app that is easy to use on all devices.
     * To create a fun game, so users return to play again.
 
-* ## Target audience
+* **Target audience**
     * Parents with young children aged 7-12.
 
 
@@ -89,7 +88,7 @@ The app consists of the landing page with the game instructions and a 'Play Now'
   
 ## Skeleton
 ------  
-* Project wireframes can be found [here](assets/images/funny-bones-wf.pdf)    
+* Project wireframes can be found [HERE](assets/images/funny-bones-wf.pdf)    
 
 * Wireframes were created using Balsamiq Wireframes at the planning stage of the project. 
   
@@ -98,34 +97,55 @@ The app consists of the landing page with the game instructions and a 'Play Now'
   
 
 ## Surface 
+-----
+### Color Scheme  
 
-#### Design Inspiration & Colour choices  
-
-   
 ![color palette](assets/images/color-palette.png)  
 To create the color palette we used [Coolors](https://coolors.co/).
 
 Hues of orange, purple and black were chosen for this project as they are traditional colors of Halloween. Combination of these colors are warm and stimulating and grab children's attention.
 
-#### Typography  
+### Typography
+
+* Google Fonts _*Griffy*_ and _*Creepster*_ were used accross the site for a fayrytale look and feel with a touch of spooky just to give you the creeps.
   
-  
-#### Imagery  
-------  
+### Imagery  
+
 **(imagery choice goes here)**  
-  
+
+
+
+# Technologies Used  
+------  
+## Languages
+
+* **HTML5**
+* **CSS3**
+* **Javascript**  
+
+## Frameworks, Libraries, Programs & Platforms Used:   
+
+* **Bootstrap5** - used to create a layout and to build a responsive design, which is compatible with all modern browsers. 
+* **Git** - used for version control and to keep track of the changes made to the repository.
+* **GitHub** - used as a hosting service for version control and collaborations.
+* **Balsamiq** - to create a mockup to allow me to plan the layout and content of the website.
+* **Coolors** was used to create the color palette for this project.
+* **Google Fonts** - ___ font has been used throughout the website.
+
+
 [:top:](#funny-bones)
 
-#### Core Features  
+# Features  
 ------  
+
+## Implemented Features
 *   
 *   
 *   
 *   
   
   
-#### Future Implementations  
-------  
+## Future Features
   
 *   
 *   
@@ -133,20 +153,18 @@ Hues of orange, purple and black were chosen for this project as they are tradit
 *   
   
   
-#### Bugs & Fixes  
+# Bugs & Fixes  
 ------  
 **Bugs and fixes to go here**  
   
   
-#### Implementation  
-------  
   
 [:top:](#funny-bones)
 
-#### Deployment  
+# Deployment  
 ------  
   
-### Deployment Steps  
+## Deployment Steps  
   
 This project was deployed to GitHub Pages following these steps:  
   
@@ -162,7 +180,7 @@ This project was deployed to GitHub Pages following these steps:
 10. To view the deployed website [click here!]()  
   
   
-### Making a clone to run locally  
+## Making a clone to run locally  
   
 It is important to note that this project will not run locally unless an env.py file has been set up by the user which contains the IP, PORT, MONGO_DBNAME, MONGO_URI and SECRET_KEY which have all been kept secret in keeping with best security practices.  
   
@@ -178,7 +196,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
     -pip install -r requirements.txt  
   
     
-### How to Fork the respository.  
+## How to Fork the respository  
   
 By forking the GitHub Repository you make a copy of the original repository on your own GitHub account to view and/or make changes without affecting the original repository by following these simple steps:  
   
@@ -186,7 +204,7 @@ By forking the GitHub Repository you make a copy of the original repository on y
 2. Near the top of the Repository, on the right-hand side of the screen, locate the "Fork" button.  
 3. Click this button and you should now have a copy of the original repository in your GitHub account.  
     
-### Making a Local Clone  
+## Making a Local Clone 
   
 1. Log in to GitHub and locate the [StephenJ2020/funny-bones Repository](https://github.com/StephenJ2020/funny-bones)  
 2. Under the repository name, click "Clone or download".  
@@ -209,37 +227,29 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 
 [:top:](#funny-bones)
 
-#### Testing  
+# Testing  
 ------  
-##### Code Validity
+## Code Validity
 * HTML Markup Validation Service - 
 * CSS Validation Service - 
 * JavaScript Code Quality Tool JSHint - 
   
-##### Testing User Stories
-* First
+## Testing User Stories
+* *First time user stories:*
+    * 
+    * 
+
+* *Returning user stories:*
 
 
-#### Technologies Used  
-------  
-* HTML5    
-* CSS3    
-* Javascript    
 
-###### Frameworks, Libraries, Programs & Platforms Used:   
-
-* **Bootstrap5** - used to create a layout and to build a responsive design, which is compatible with all modern browsers. 
-* **Git** - used for version control and to keep track of the changes made to the repository.
-* **GitHub** - used as a hosting service for version control and collaborations.
-* **Balsamiq** - to create a mockup to allow me to plan the layout and content of the website.
-* **Coolors** was used to create the color palette for this project.
-* **Google Fonts** - ___ font has been used throughout the website.
 
   
-#### Credits  
+# Credits  
 ------  
   
-#### Acknowledgements  
+
+# Acknowledgements  
 ------  
 
 
