@@ -44,33 +44,39 @@ In this interactive app, children are the creators of their own story!
 * Credits
 * Acknowledgements
 
+# UX
+___
+## Strategy
 
-## Target audience
-Parents with young children aged 7-12.
+* ## Project Goals
+    * To create a fully-optimized responsive interactive story book app for flawless user experience on all devices. 
+    * To create a platform that allows all users to learn popular Halloween stories in a fun, play-based way. 
+
+* ## Business Goals   
+    * A simple minimalistic app that is easy to use on all devices.
+    * To create a fun game, so users return to play again.
+
+* ## Target audience
+    * Parents with young children aged 7-12.
 
 
 ## User Stories
-**As a first time user I want to be able to:**  
-* Navigate the site intuitively and easily access all available features from different screen size devices.
-* Understand the game instructions easily.
-* Develop learning skills in young children.
-* Have a positive and fun experience.  
-* Be able to complete the game to win.
+
+* **As a first time user I want to be able to:**  
+
+    * Navigate the site intuitively and easily access all available features from different screen size devices.
+    * Understand the game instructions easily.
+    * Develop learning skills in young children.
+    * Be able to complete the game to win.
+    * Have a positive and fun experience.  
 
    
-**As a returning user I want to be able to:**  
-* Play the game without any detours.
-*   
-*   
+* **As a returning user I want to be able to:**  
+    * Play the game without any detours.
   
-  
-## Site Owners Goals   
-------  
-* A simple minimalistic app that is easy to use on all devices.
-* To create a fun game, so users return to play again.
-*   
-  
-  
+
+[:top:](#funny-bones)
+
 ## Scope  
 ------  
   
@@ -96,12 +102,7 @@ Parents with young children aged 7-12.
 #### Skeleton
 ------  
   
-  
-#### Wireframes  
-------  
-* Wireframes were created using the [Balsamiq](https://balsamiq.com/wireframes/) software.  
-![Funny Bones](assets/images/rm-funny-bones-wf.png)       
-[Wireframes](assets/images/rm-funny-bones wf.pdf)    
+[Wireframes](assets/images/funny-bones-wf.pdf)    
   
   
 #### [Back to top](<#table-of-content>)  
@@ -211,8 +212,15 @@ $ git clone https://github.com/StephenJ2020/funny-bones
   
 #### Testing  
 ------  
+##### Code Validity
+* HTML Markup Validation Service - 
+* CSS Validation Service - 
+* JavaScript Code Quality Tool JSHint - 
   
-  
+##### Testing User Stories
+* First
+
+
 #### Technologies Used  
 ------  
 	* HTML5    
@@ -220,8 +228,12 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 	* Javascript    
 
 Frameworks, Libraries, Programs & Platforms Used:   
-	* Bootstrap5  
-  
+	* **Bootstrap5** - used to create a layout and to build a responsive design, which is compatible with all modern browsers. 
+    * **Git** - used for version control and to keep track of the changes made to the repository.
+    * **GitHub** - used as a hosting service for version control and collaborations.
+    * **Balsamiq** - to create a mockup to allow me to plan the layout and content of the website.
+    * **Google Fonts** - ___ font has been used throughout the website.
+
   
 #### Credits  
 ------  
