@@ -89,7 +89,7 @@ The app consists of the landing page with the game instructions and a 'Play Now'
   
 ## Skeleton
 ------  
-* Project wireframes can be found here: [Desktop/Tablet Wireframes](assets/images/funny-bones-wf.pdf)    
+* Project wireframes can be found [here](assets/images/funny-bones-wf.pdf)    
 
 * Wireframes were created using Balsamiq Wireframes at the planning stage of the project. 
   
@@ -108,7 +108,6 @@ To create the color palette we used [Coolors](https://coolors.co/).
 Hues of orange, purple and black were chosen for this project as they are traditional colors of Halloween. Combination of these colors are warm and stimulating and grab children's attention.
 
 #### Typography  
-------  
   
   
 #### Imagery  
@@ -223,17 +222,18 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 
 #### Technologies Used  
 ------  
-	* HTML5    
-	* CSS3    
-	* Javascript    
+* HTML5    
+* CSS3    
+* Javascript    
 
-Frameworks, Libraries, Programs & Platforms Used:   
-	* **Bootstrap5** - used to create a layout and to build a responsive design, which is compatible with all modern browsers. 
-    * **Git** - used for version control and to keep track of the changes made to the repository.
-    * **GitHub** - used as a hosting service for version control and collaborations.
-    * **Balsamiq** - to create a mockup to allow me to plan the layout and content of the website.
-    * **Coolors** was used to create the color palette for this project.
-    * **Google Fonts** - ___ font has been used throughout the website.
+###### Frameworks, Libraries, Programs & Platforms Used:   
+
+* **Bootstrap5** - used to create a layout and to build a responsive design, which is compatible with all modern browsers. 
+* **Git** - used for version control and to keep track of the changes made to the repository.
+* **GitHub** - used as a hosting service for version control and collaborations.
+* **Balsamiq** - to create a mockup to allow me to plan the layout and content of the website.
+* **Coolors** was used to create the color palette for this project.
+* **Google Fonts** - ___ font has been used throughout the website.
 
   
 #### Credits  
