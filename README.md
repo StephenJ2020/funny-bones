@@ -84,6 +84,31 @@ ___
   
 ## Structure  
 ------  
+The app consists of 5 pages in total.
+
+### The Game Pages
+3 of the pages are "game" pages, that is, they each display a different type of simple game.  
+The 3 games that we have decided on are as follows:  
+#### A Maze Game  
+The user is asked to guide their pointer through a "maze" in order to get to the middle within a given time period.
+#### Smashing Pumpkins Game
+Inspired by whac-a-mole, the user must click on the disappearing pumpkin heads before the time runs out.
+#### Night Invaders Game  
+Inspired by space invaders, the user must avoid the scary bats whilst killing a certain amount in a given time.
+
+### The Landing Page
+The main page that displays the picture of the haunted house and contains various pop-ups and modals to tell the story and provide interactivity.
+
+### The Final Page
+Similar to the main page this would contain pop-ups and scrollable text and would be set against a picture of an attic as this is where the story ends.
+
+### Notes  
+The main page is the first page the user will come across.  The user then has the option to naviage to any of the 3 "Game Pages".  Once they have completed this
+they will be able to access the final page to finish the story.
+
+
+
+
 The app consists of the landing page with the game instructions and a 'Play Now' button, three game pages, that allow users to unlock the story endings by winning the games and the 'Play Again' page.  
   
 ## Skeleton
