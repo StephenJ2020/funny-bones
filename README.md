@@ -247,7 +247,8 @@ $ git clone https://github.com/StephenJ2020/funny-bones
   
 # Credits  
 ------  
-  
+* Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc/).
+* Favicon is taken from [Flaticon](https://www.flaticon.com/).
 
 # Acknowledgements  
 ------  
