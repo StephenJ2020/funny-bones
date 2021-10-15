@@ -93,7 +93,8 @@ The 3 games that we have decided on are as follows:
 The user is asked to guide their pointer through a "maze" in order to get to the middle within a given time period.
 #### Smashing Pumpkins Game
 Inspired by whac-a-mole, the user must click on the disappearing pumpkin heads before the time runs out.
-#### TBD
+#### Night Invaders Game  
+Inspired by space invaders, the user must avoid the scary bats whilst killing a certain amount in a given time.
 
 ### The Landing Page
 The main page that displays the picture of the haunted house and contains various pop-ups and modals to tell the story and provide interactivity.
