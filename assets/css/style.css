@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Arvo', sans-serif;
+}
+
+#home {
+    background: url('/assets/images/home.jpg') no-repeat center center fixed;
+}
+/*-- Navbar ---*/
+#navbar {
+    background-color: #ff8500;
+}
+.navbar {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Griffy', sans-serif;
+  letter-spacing: .08rem;
+  text-decoration: none;
+}
+
+.navbar-nav li {
+  padding-right: 0.5rem;
+}
+
+a.nav-link{
+    color: #000;
+}
+
+.navbar-brand img {
+  height: 2.7rem;
+  padding-left: 0.5rem;
+}
+
+a.nav-link:hover {
+  color: #fff;
+}
+
+a.nav-link:active {
+    color: rgb(44, 43, 43);
+}
+
+.navbar-toggler-icon {
+    color: #000 !important;
+}
