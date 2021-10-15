@@ -79,47 +79,44 @@ ___
 
 ## Scope  
 ------  
-  
-### Features & Functional Requirements  
-------  
-  
-*   
-*   
-*   
-*   
-*   
-  
-  
-#### UX  
-------  
-  
-  
+* To create a user friendly and simple to use interactive story book app using HTML, CSS, JavaScript and Bootstrap. 
+* Intuitive design: allow users to navigate the site intuitively, play games and learn the stories.
+
   
 ## Structure  
 ------  
+The app consists of the landing page with the game instructions and a 'Play Now' button, three game pages, that allow users to unlock the story endings by winning the games and the 'Play Again' page.  
   
-  
-#### Skeleton
+## Skeleton
 ------  
-  
-[Wireframes](assets/images/funny-bones-wf.pdf)    
-  
-  
-#### [Back to top](<#table-of-content>)  
+* Project wireframes can be found here: [Desktop/Tablet Wireframes](assets/images/funny-bones-wf.pdf)    
+
+* Wireframes were created using Balsamiq Wireframes at the planning stage of the project. 
   
   
+[:top:](#funny-bones)
+  
+
+## Surface 
+
 #### Design Inspiration & Colour choices  
-------  
+
    
+![color palette](assets/images/color-palette.png)  
+To create the color palette we used [Coolors](https://coolors.co/).
+
+Hues of orange, purple and black were chosen for this project as they are traditional colors of Halloween. Combination of these colors are warm and stimulating and grab children's attention.
+
 #### Typography  
 ------  
-   
+  
   
 #### Imagery  
 ------  
 **(imagery choice goes here)**  
   
-  
+[:top:](#funny-bones)
+
 #### Core Features  
 ------  
 *   
@@ -145,7 +142,8 @@ ___
 #### Implementation  
 ------  
   
-  
+[:top:](#funny-bones)
+
 #### Deployment  
 ------  
   
@@ -209,7 +207,9 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 > remove: Total 10 (delta 1), reused 10 (delta 1)  
 > Unpacking objects: 100% (10/10), done.  
 ```   
-  
+
+[:top:](#funny-bones)
+
 #### Testing  
 ------  
 ##### Code Validity
@@ -232,6 +232,7 @@ Frameworks, Libraries, Programs & Platforms Used:
     * **Git** - used for version control and to keep track of the changes made to the repository.
     * **GitHub** - used as a hosting service for version control and collaborations.
     * **Balsamiq** - to create a mockup to allow me to plan the layout and content of the website.
+    * **Coolors** was used to create the color palette for this project.
     * **Google Fonts** - ___ font has been used throughout the website.
 
   
@@ -240,3 +241,7 @@ Frameworks, Libraries, Programs & Platforms Used:
   
 #### Acknowledgements  
 ------  
+
+
+
+[:top:](#funny-bones)
