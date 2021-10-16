@@ -59,3 +59,34 @@ a.nav-link:active {
     background: white;
     color: black;
 }
+
+/*-------------------------------Space invaders------------------*/
+
+/*-------------general-----------------------*/
+
+.mx-auto {
+  margin: auto;
+}
+
+/*---------------background-image-----------------*/
+
+.background-pic {
+    background: url('/assets/images/space_invader.jpeg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+/*-------------game console-----------------------*/
+
+#console {
+  width: 600px;
+  margin-top: 12rem;
+  text-align: center;
+}
+
+/*------------media queries-----------------------*/
+
+@media only screen and (min-width:1180px) {
+    .navbar {
+      opacity: 1.0;
+    }
+}
