@@ -154,3 +154,25 @@ a.nav-link:active {
 .pop.up .ghost {
   top: 0;
 }
+
+/* Whack-A-Ghost Media Queries */
+
+@media (min-width: 768px) {
+  .game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .game {
+    width: 850px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
