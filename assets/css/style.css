@@ -8,8 +8,7 @@ body {
     font-family: 'Arvo', sans-serif;
 }
 
-#home,
-#cards {
+#home {
     background: no-repeat center center fixed;
     min-height: 100%;
     background-size: cover;
@@ -58,4 +57,27 @@ a.nav-link:active {
 .play-btn {
     background: white;
     color: black;
+}
+
+/* -------------- FLIPPING CARDS CSS ----------------- */
+
+.flipping-cards__container {
+    margin-top: 4.3rem; /*nav height*/
+    height: 100vh;
+    background: url("../images/cards-img.jpeg") no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+}
+
+.cards {
+    width: 18rem;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.cards img {
+    width: 15rem;
+    height: auto;
 }
