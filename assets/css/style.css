@@ -79,21 +79,35 @@ a.nav-link:active {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  position: relative;
   -webkit-background-size: center center / cover no-repeat fixed;
   -moz-background-size: center center / cover no-repeat fixed;
   -o-background-size: center center / cover no-repeat fixed;
 }
+
+/*Source https://www.codegrepper.com/code-examples/css/how+to+make+dark+overlay+css*/
+/* .whack-a-ghost__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5f5141;
+  opacity: 0.8;
+} */
 
 /* Adapted from - https://github.com/wesbos/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/style.css */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-h1 {
+.h1 {
   text-align: center;
-  font-size: 10rem;
-  line-height: 1;
-  margin-bottom: 0;
+  font-size: 4rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .score {
@@ -104,7 +118,7 @@ h1 {
 }
 
 .game {
-  width: 600px;
+  width: 400px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -112,18 +126,16 @@ h1 {
 }
 
 .pop {
-  flex: 1 0 33.33%;
+  flex: 1 0 31%;
   overflow: hidden;
   position: relative;
 }
 
 .pop:after {
   display: block;
-  background: url('../images/dirt.svg') bottom center no-repeat;
-  background-size: contain;
   content: '';
   width: 100%;
-  height:70px;
+  height: 70px;
   position: absolute;
   z-index: 2;
   bottom: -30px;
@@ -135,7 +147,7 @@ h1 {
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 100%;
+  height: 70%;
   transition:all 0.45s;
 }
 

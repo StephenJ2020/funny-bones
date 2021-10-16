@@ -25,7 +25,7 @@ function randomPop(pops){
 }
 
 function peep(){
-    const time = randomTime(900, 1500);
+    const time = randomTime(1000, 1600);
     const pop = randomPop(pops);
     pop.classList.add('up');
     setTimeout(() => {
