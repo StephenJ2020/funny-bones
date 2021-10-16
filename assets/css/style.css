@@ -68,6 +68,11 @@ a.nav-link:active {
   margin: auto;
 }
 
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /*---------------background-image-----------------*/
 
 .background-pic {
@@ -85,12 +90,20 @@ a.nav-link:active {
   text-align: center;
 }
 
-#game {
-  width: 600px;
-  margin-top: 12rem;
+#game-grid {
+  width: 602px;
+  margin-top: 10rem;
   text-align: center;
-  height: 24rem;
+  height: 60vh;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+#game-grid div {
+  width: 40px;
+  height: 6.6%;
+} 
 
 /*------------media queries-----------------------*/
 

@@ -8,6 +8,12 @@ window.onload = function(){
 function mad_scientist(){
     var games_console = document.getElementById("console");
     games_console.hidden = true;
-    var game = document.getElementById("game");
-    game.hidden = false;
-}
+    var game_grid = document.getElementById("game-grid");
+    game_grid.hidden = false;
+    const grid = document.querySelector("#game-grid");
+    console.log(grid);
+
+    for (let i = 0; i < 225; i++){
+        const square = document.createElement('div');
+        grid.appendChild(square)
+}}
