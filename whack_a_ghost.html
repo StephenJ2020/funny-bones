@@ -56,29 +56,36 @@
                     <div class="row whack-a-ghost__overlay">
                         <div class="col bg-image">
                             <!-- Adapted from - https://github.com/wesbos/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/index-START.html -->
-                            <p class="h1">Whack-a-mole! <span class="score">0</span></p> -->
-                            <button onClick="startGame()">Start!</button>
+                            <div>
+                                <p class="h1">Whack-A-Ghost! <span class="score">0</span></p>
+                            </div>
                             <div class="game">
-                                <div class="pop pop1" style="border: 3px solid red;">
+                                <div class="pop pop1">
                                   <div class="ghost"></div>
                                 </div>
-                                <div class="pop pop2" style="border: 3px solid blue;">
+                                <div class="pop pop2">
                                   <div class="ghost"></div>
                                 </div>
-                                <div class="pop pop3" style="border: 3px solid blueviolet;">
+                                <div class="pop pop3">
                                   <div class="ghost"></div>
                                 </div>
-                                <div class="pop pop4" style="border: 3px solid chartreuse;">
+                                <div class="pop pop4">
                                   <div class="ghost"></div>
                                 </div>
-                                <div class="pop pop5" style="border: 3px solid cyan;">
+                                <div class="pop pop5">
                                   <div class="ghost"></div>
                                 </div>
-                                <div class="pop pop6" style="border: 3px solid black;">
+                                <div class="pop pop6">
                                   <div class="ghost"></div>
                                 </div>
                             </div>
-                            
+                            <div class="position-relative">
+                                <button class="position-absolute top-50 start-50 translate-middle" id="btn-ghost" onClick="startGame()"><strong>Start!</strong></button>
+                            </div>
+                            <div>
+                                <!-- <p class="h1"><span class="lock"></span></p> -->
+                                <p class="h1">Whack-A-Ghost! <span class="lock">0</span></p>
+                            </div>
                         </div>
                     </div>
                 </section>

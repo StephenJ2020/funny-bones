@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
 
 body {
-    /* background-size: cover;
-    height: 100%;    
-    overflow-x: hidden;
-    overflow-y: hidden; */
     font-family: 'Arvo', sans-serif;
 }
 
@@ -21,7 +17,7 @@ body {
 
 /* Whack-A-Ghost */
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size: 10px;
 }
 
@@ -117,12 +113,19 @@ a.nav-link:active {
   border-radius: 1rem;
 }
 
+#btn-ghost{
+  font-size: 3rem;
+  align-self: center;
+  color: #5a189a;
+  background-color: #ff8500;
+}
+
 .game {
   width: 400px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .pop {
@@ -163,7 +166,7 @@ a.nav-link:active {
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 100px auto;
   }
 }
 
@@ -173,6 +176,6 @@ a.nav-link:active {
     height: 650px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 40px auto;
   }
 }

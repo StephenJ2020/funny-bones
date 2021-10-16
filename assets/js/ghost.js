@@ -8,6 +8,7 @@ const ghosts = document.querySelectorAll('.ghost');
 let lastPop;
 let timeup = false;
 let score = 0;
+let lock = 11;
 
 function randomTime(min, max){
     return Math.round(Math.random() * (min - max) + min);
@@ -39,7 +40,7 @@ function startGame(){
     timeup = false;
     score = 0;
     peep();
-    setTimeout(() => timeup = true, 12000)
+    setTimeout(() => timeup = true, 12000);
 }
 
 function bonk(e){
@@ -47,6 +48,13 @@ function bonk(e){
     score++;
     this.classList.remove('up');
     scoreBoard.textContent = score;
+}
+
+function combination(){
+    lock.textContent = 11;
+    if (score > 3){
+        return lock;
+    }
 }
 
 ghosts.forEach(ghost => ghost.addEventListener('click', bonk));
