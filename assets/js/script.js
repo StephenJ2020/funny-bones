@@ -6,8 +6,8 @@ window.onload = function(){
 
 
 function mad_scientist(){
-    console.log("heya")
     var games_console = document.getElementById("console");
-    games_console.innerHTML = 
-    `<image src="/assets/images/home.png">`
+    games_console.hidden = true;
+    var game = document.getElementById("game");
+    game.hidden = false;
 }

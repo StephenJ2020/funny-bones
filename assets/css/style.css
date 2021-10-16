@@ -73,6 +73,8 @@ a.nav-link:active {
 .background-pic {
     background: url('/assets/images/space_invader.jpeg') no-repeat fixed center center;
     background-size: cover;
+    height: 100vh;
+    position: relative;
 }
 
 /*-------------game console-----------------------*/
@@ -81,6 +83,13 @@ a.nav-link:active {
   width: 600px;
   margin-top: 12rem;
   text-align: center;
+}
+
+#game {
+  width: 600px;
+  margin-top: 12rem;
+  text-align: center;
+  height: 24rem;
 }
 
 /*------------media queries-----------------------*/
