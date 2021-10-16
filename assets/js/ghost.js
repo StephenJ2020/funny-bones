@@ -2,28 +2,51 @@
 
 /* Adapted from Tutorial - https://courses.wesbos.com/account/access/6148bf70b36fe451adb8f730/view/194158577 */
 
-const holes = document.querySelectorAll('.hole');
+const pops = document.querySelectorAll('.pop');
 const scoreBoard = document.querySelector('.score');
-const moles = document.querySelectorAll('.mole');  
-let lastHole;
+const ghosts = document.querySelectorAll('.ghost');  
+let lastPop;
+let timeup = false;
+let score = 0;
 
 function randomTime(min, max){
     return Math.round(Math.random() * (min - max) + min);
 }
 
-function randomHole(holes){
-    const idx = Math.floor(Math.random() * holes.length);
-    const hole = holes[idx];
-    if (hole === lastHole){
-        return randomHole(holes);
+function randomPop(pops){
+    const idx = Math.floor(Math.random() * pops.length);
+    const pop = pops[idx];
+    if (pop === lastPop){
+        return randomPop(pops);
     }
 
-    lastHole = hole;
-    return hole;
+    lastPop = pop;
+    return pop;
 }
 
 function peep(){
-    const time = randomTime(200, 1000);
-    const hole = randomHole(holes);
-    console.log('time, hole');
+    const time = randomTime(900, 1500);
+    const pop = randomPop(pops);
+    pop.classList.add('up');
+    setTimeout(() => {
+        pop.classList.remove('up');
+        if (!timeup) peep();
+    }, time);
 }
+
+function startGame(){
+    scoreBoard.textContent = 0;
+    timeup = false;
+    score = 0;
+    peep();
+    setTimeout(() => timeup = true, 12000)
+}
+
+function bonk(e){
+    if (!e.isTrusted) return; // Check user is not cheating
+    score++;
+    this.classList.remove('up');
+    scoreBoard.textContent = score;
+}
+
+ghosts.forEach(ghost => ghost.addEventListener('click', bonk));
