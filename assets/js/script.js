@@ -1,3 +1,5 @@
+var myTimeOut;
+
 window.onload = function() {
     var character = document.getElementById("character");
     console.log(character)
@@ -18,10 +20,11 @@ function mad_scientist() {
     games_console.hidden = true;
     var game_grid = document.getElementById("game-grid");
     game_grid.hidden = false;
-    setTimeout(function(){ 
+    myTimeOut = setTimeout(function(){ 
         var finish_message = document.getElementById("timer");
         finish_message.hidden = false;
     }, 5300);
+    myTimeOut();
 }
 
 
@@ -44,6 +47,7 @@ var check_dead = setInterval(function(){
     var characterTopMax = height - (150 + 60);
     console.log(characterTopMax)
     if (blockLeft<20 && blockLeft>0 && characterTop>= characterTopMax){
+        clearTimeout( myTimeOut )
         alert("u lose");
         block.style.animation = "none";
         block.style.display = "none"
