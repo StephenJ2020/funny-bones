@@ -38,53 +38,58 @@
 </header>
 
 <!-- Flipping cards game -->
+
+<div class="flipping-cards__overlay"></div>
+
 <section class="flipping-cards container-fluid">
     <div class="row">
         <div class="col-12">
             <h2 class="text-center my-5 text-white">Memory Game</h2>
         </div>
-        <div class="col-12">
-            <div class="score-panel text-center">
+        <div class="col-6">
+            <div class="score-panel float-end">
                 <ul class="stars">
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star text-white"></i></li>
+                    <li><i class="fa fa-star text-white"></i></li>
+                    <li><i class="fa fa-star text-white"></i></li>
                 </ul>
-                <span class="moves">0</span> Move(s)
-                <div class="timer"></div>
-                <div class="restart text-center" onclick=startGame()>
-                    <i class="fas fa-redo"></i>
-                </div>
+                <span class="moves text-white">0</span> <span class="text-white">Move(s)</span>
+                <div class="timer text-white"></div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="restart text-center text-white" onclick=startGame()>
+                Reload <i class="fas fa-redo"></i>
             </div>
         </div>
     </div>
 
-        <ul class="deck row mx-3 pe-3 justify-content-between" id="js-card-deck">
-            <li class="col-12 col-md-4 js-card card match" type="halloween">
-                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
-                     alt="Flipping cards game halloween">
-            </li>
-            <li class="col-12 col-md-4 card js-card card" type="pumpkin">
-                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
-                     alt="Flipping cards game pumpkin">
-            </li>
-            <li class="col-12 col-md-4 card js-card match" type="halloween">
-                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
-                     alt="Flipping cards game halloween">
-            </li>
-            <li class="col-12 col-md-4 card js-card open show" type="witch">
-                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
-                     alt="Flipping cards game witch">
-            </li>
-            <li class="col-12 col-md-4 card js-card open show" type="pumpkin">
-                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
-                     alt="Flipping cards game pumpkin">
-            </li>
-            <li class="col-12 col-md-4 card js-card open show" type="witch">
-                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
-                     alt="Flipping cards game witch">
-            </li>
-        </ul>
+    <ul class="deck row mx-3 pe-3 justify-content-between" id="js-card-deck">
+        <li class="col-12 col-md-4 js-card card match" type="halloween">
+            <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                 alt="Flipping cards game halloween">
+        </li>
+        <li class="col-12 col-md-4 card js-card card" type="pumpkin">
+            <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                 alt="Flipping cards game pumpkin">
+        </li>
+        <li class="col-12 col-md-4 card js-card match" type="halloween">
+            <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                 alt="Flipping cards game halloween">
+        </li>
+        <li class="col-12 col-md-4 card js-card open show" type="witch">
+            <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                 alt="Flipping cards game witch">
+        </li>
+        <li class="col-12 col-md-4 card js-card open show" type="pumpkin">
+            <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                 alt="Flipping cards game pumpkin">
+        </li>
+        <li class="col-12 col-md-4 card js-card open show" type="witch">
+            <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                 alt="Flipping cards game witch">
+        </li>
+    </ul>
 </section>
 
 <!--Modal success-->

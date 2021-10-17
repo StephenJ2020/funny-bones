@@ -59,20 +59,10 @@ a.nav-link:active {
 /* -------------- FLIPPING CARDS CSS ----------------- */
 
 .flipping-cards {
-    background: url("../images/cards-img.jpeg") no-repeat fixed center;
+    background: url("../images/cards-img.png") no-repeat fixed center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
-
-/*.flipping-cards__wrapper {*/
-/*    max-width: 100vw;*/
-/*}*/
-
-/*@media (min-width: 480px) {*/
-/*    .flipping-cards__wrapper {*/
-/*        max-width: 70vw;*/
-/*    }*/
-/*}*/
 
 .flipping-cards__card-img {
     width: 80%;
@@ -84,13 +74,13 @@ a.nav-link:active {
 
 /*Source https://www.codegrepper.com/code-examples/css/how+to+make+dark+overlay+css*/
 .flipping-cards__overlay {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #5f5141;
     opacity: 0.8;
+	z-index: 0;
 }
 
 .flipping-cards__header {
