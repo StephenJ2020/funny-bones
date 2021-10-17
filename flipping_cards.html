@@ -17,7 +17,7 @@
 
 <!-- Navigation Bar-->
 <header>
-    <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="assets/images/castle-house.png"
                                                            alt="Halloween haunted house" title="Logo"></a>
@@ -37,69 +37,78 @@
     </nav>
 </header>
 
-
 <!-- Flipping cards game -->
-<section>
-    <div class="px-0 flipping-cards">
-        <div class="flipping-cards__overlay"></div>
-        <div class="container-fluid flipping-cards__container">
-            <div class="row px-5 pt-5">
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card h-100 shadow-sm bg-dark">
-                        <div class="card-body">
-                            <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
-                                 alt="Flipping cards game halloween">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card h-100 shadow-sm bg-dark">
-                        <div class="card-body">
-                            <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
-                                 alt="Flipping cards game pumpkin">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card h-100 shadow-sm bg-dark">
-                        <div class="card-body">
-                            <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
-                                 alt="Flipping cards game witch">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card h-100 shadow-sm bg-dark">
-                        <div class="card-body">
-                            <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
-                                 alt="Flipping cards game halloween">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card h-100 shadow-sm bg-dark">
-                        <div class="card-body">
-                            <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
-                                 alt="Flipping cards game pumpkin">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="card h-100 shadow-sm bg-dark">
-                        <div class="card-body">
-                            <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
-                                 alt="Flipping cards game witch">
-                        </div>
-                    </div>
+<section class="flipping-cards container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center my-5 text-white">Memory Game</h2>
+        </div>
+        <div class="col-12">
+            <div class="score-panel text-center">
+                <ul class="stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="moves">0</span> Move(s)
+                <div class="timer"></div>
+                <div class="restart text-center" onclick=startGame()>
+                    <i class="fas fa-redo"></i>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+        <ul class="deck row mx-3 pe-3 justify-content-between" id="js-card-deck">
+            <li class="col-12 col-md-4 js-card card match" type="halloween">
+                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game halloween">
+            </li>
+            <li class="col-12 col-md-4 card js-card card" type="pumpkin">
+                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game pumpkin">
+            </li>
+            <li class="col-12 col-md-4 card js-card match" type="halloween">
+                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game halloween">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="witch">
+                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game witch">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="pumpkin">
+                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game pumpkin">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="witch">
+                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game witch">
+            </li>
+        </ul>
 </section>
+
+<!--Modal success-->
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Congratulations 🎉</h2>
+        <a class="close" href=#>×</a>
+        <div class="content-1">
+            Congratulations you're a winner 🎉🎉
+        </div>
+        <div class="content-2">
+            <p>You made <span id=finalMove> </span> moves </p>
+            <p>in <span id=totalTime> </span></p>
+            <p>Rating: <span id=starRating></span></p>
+        </div>
+        <button id="play-again" onclick="playAgain()">
+            Play again 😄</a>
+        </button>
+    </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="assets/js/flipping-cards.js"></script>
 </body>
 
 </html>
