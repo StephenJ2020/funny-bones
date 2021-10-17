@@ -274,6 +274,9 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 ------  
 * Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc/).
 * Favicon is taken from [Flaticon](https://www.flaticon.com/).
+* [Image map tool](https://www.image-map.net/)
+* To make image map responsive [RWD Image Maps](https://github.com/stowball/jQuery-rwdImageMaps)
+*  
 
 # Acknowledgements  
 ------  
