@@ -274,9 +274,17 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 ------  
 * Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc/).
 * Favicon is taken from [Flaticon](https://www.flaticon.com/).
+
+* Whack-A-Ghost:  
+  - [Wes Bos Tutorial](https://courses.wesbos.com/account/access/6148bf70b36fe451adb8f730/view/194158577)  
+  - [Base HTML](https://github.com/wesbos/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/index-START.html)  
+  - [CSS file](https://github.com/wesbos/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/style.css)   
+  - [Ghost image](https://www.kissclipart.com/ghost-sj3t4l/)  
+
 * [Image map tool](https://www.image-map.net/)
 * To make image map responsive [RWD Image Maps](https://github.com/stowball/jQuery-rwdImageMaps)
 *  
+
 
 # Acknowledgements  
 ------  
