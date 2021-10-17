@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
 
 body {
-    background-size: cover;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: 'Arvo', sans-serif;
+    font-family: 'Griffy', sans-serif;
 }
 
-#home,
-#cards {
+img[usemap] {
     background: no-repeat center center fixed;
-    min-height: 100%;
     background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#help {
+    background: url(../../assets/images/help.jpg) no-repeat fixed center;
+    background-size: cover;
 }
 
 /*-- Navbar ---*/
 #navbar {
-    background-color: #ff8500;
+    background-color: #ff9e00 !important;
+    width: 100vw;
 }
+
 .navbar {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Creepster', sans-serif;
-  letter-spacing: .08rem;
+  letter-spacing: .1rem;
   text-decoration: none;
 }
 
@@ -35,7 +38,7 @@ body {
 }
 
 a.nav-link{
-    color: #000;
+    color: #000 !important;
 }
 
 .navbar-brand img {
@@ -44,18 +47,50 @@ a.nav-link{
 }
 
 a.nav-link:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 a.nav-link:active {
     color: rgb(44, 43, 43);
 }
 
-.navbar-toggler-icon {
-    color: #000 !important;
+.navbar-toggler {
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+    color: #000;
 }
 
-.play-btn {
-    background: white;
-    color: black;
+/*--- Home page button ---*/ 
+
+/* .play-btn {
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+    padding: 8px;
+    position: absolute;
+    bottom: 30%;
+    right: 40%;
+    /* z-index: 2; */
+    /* text-decoration: none;
+    background: #ff9e00;
+
+} */
+
+
+.copyright {
+    background-color: #ff9e00;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Creepster;
+    text-decoration: none;
+    color: #000;
+}
+
+.copyright:hover {
+    color: #fff;
 }
