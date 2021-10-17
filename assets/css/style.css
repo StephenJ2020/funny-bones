@@ -104,20 +104,24 @@ a.nav-link:active {
   width: 800px;
   text-align: center;
   height: 50vh;
-  border: solid black 1px;
+  border: solid orange 6px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  border-radius: 10px;
+  background: black;
 }
 
 
 #character {
-  width: 20px;
+  width:100px;
   height: 150px;
-  background-color: red;
   position: relative;
   top: calc(50vh - 152px);
   left: 0px;
+  background-image: url('/assets/images/mad_scientist.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .animate {
@@ -136,7 +140,7 @@ a.nav-link:active {
 }
 
 @keyframes block {
-  0%{left: 720px;}
+  0%{left: 650px;}
   100%{left: -40px;}
 }
 
@@ -152,9 +156,7 @@ a.nav-link:active {
   height: 50px;
   background-color: orange;
   color: white;
-  position: absolute;
-  top: 32vh;
-  left: calc(50vw - 150px);
+  margin: auto;
 }
 
 #replay {

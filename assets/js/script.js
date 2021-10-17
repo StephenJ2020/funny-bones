@@ -45,7 +45,7 @@ var check_dead = setInterval(function(){
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"))
     var characterTopMax = height - (150 + 60);
     console.log(characterTopMax)
-    if (blockLeft<20 && blockLeft>0 && characterTop>= characterTopMax){
+    if (blockLeft<100 && blockLeft>0 && characterTop>= characterTopMax){
         replay = document.getElementById("replay");
         game_grid.hidden = true;
         replay.hidden = false;
