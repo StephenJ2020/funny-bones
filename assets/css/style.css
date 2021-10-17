@@ -6,19 +6,13 @@ body {
     font-family: 'Griffy', sans-serif;
 }
 
-.home-img {
+img[usemap] {
     background: no-repeat center center fixed;
     background-size: cover;
-    /* overflow: hidden; */
-    /* height: 80vh;
-    width: 70vw; */
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
 }
-
-/* .jumbotron-inner {
-    position: absolute;
-    top: 75%;
-    left: 8%;
-} */
 
 #help {
     background: url(../../assets/images/help.jpg) no-repeat fixed center;
@@ -35,7 +29,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Creepster', sans-serif;
-  letter-spacing: .08rem;
+  letter-spacing: .1rem;
   text-decoration: none;
 }
 
@@ -60,7 +54,15 @@ a.nav-link:active {
     color: rgb(44, 43, 43);
 }
 
+.navbar-toggler {
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+    color: #000;
+}
+
 /*--- Home page button ---*/ 
+
 /* .play-btn {
     cursor: pointer;
     height: 60px;
@@ -73,9 +75,22 @@ a.nav-link:active {
     /* text-decoration: none;
     background: #ff9e00;
 
-} */ */
+} */
 
-footer {
+
+.copyright {
     background-color: #ff9e00;
     margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Creepster;
+    text-decoration: none;
+    color: #000;
+}
+
+.copyright:hover {
+    color: #fff;
 }
