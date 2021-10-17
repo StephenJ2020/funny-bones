@@ -51,10 +51,37 @@
         </div> -->
 
         <main>
-            <article>
+            <article class="col bg-image">
+                <section>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    This is the main content of the body of the Modal!!!!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </section>
                 <section>
                     <div class="row whack-a-ghost__overlay">
-                        <div class="col bg-image">
+                        <div>
                             <!-- Adapted from - https://github.com/wesbos/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/index-START.html -->
                             <div>
                                 <p class="h1">Whack-A-Ghost! <span class="score">0</span></p>
@@ -79,13 +106,17 @@
                                   <div class="ghost"></div>
                                 </div>
                             </div>
-                            <div class="position-relative">
-                                <button class="position-absolute top-50 start-50 translate-middle" id="btn-ghost" onClick="startGame()"><strong>Start!</strong></button>
+
+                            <div class="container">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-lg btn-primary text-center" onClick="startGame()"><strong>Start!</strong></button>  <!--id="btn-ghost"-->
+                                    <button type="button" class="btn btn-lg btn-primary text-center"
+                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        Instructions!
+                                    </button>
+                                </div>
                             </div>
-                            <div>
-                                <!-- <p class="h1"><span class="lock"></span></p> -->
-                                <p class="h1">Whack-A-Ghost! <span class="lock">0</span></p>
-                            </div>
+
                         </div>
                     </div>
                 </section>
