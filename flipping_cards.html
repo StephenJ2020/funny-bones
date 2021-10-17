@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+    <meta name="Description" content="Enter your description here"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/images/pumpkin.png">
@@ -15,48 +15,132 @@
 
 <body>
 
-    <!-- Navigation Bar-->
-    <header>
-        <nav id="navbar" class="navbar navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/castle-house.png"
-                        alt="Halloween haunted house" title="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_target"
+<!-- Navigation Bar-->
+<header>
+    <nav id="navbar" class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/castle-house.png"
+                                                           alt="Halloween haunted house" title="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_target"
                     aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="collapse_target">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="space_evader.html">Space Evader</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="flipping_cards.html">Flipping Cards</a></li>
-                        <li class="nav-item"><a class="nav-link" href="whack_a_ghost.html">Whack A Ghost</a></li>
-                        <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="space_evader.html">Space Evader</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="flipping_cards.html">Flipping Cards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="whack_a_ghost.html">Whack A Ghost</a></li>
+                    <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Flipping cards game -->
+<section class="flipping-cards container-fluid">
+    <div class="flipping-cards__container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center my-5 text-white">Memory Game</h2>
+            </div>
+            <div class="col-6">
+                <div class="score-panel float-end">
+                    <ul class="stars">
+                        <li><i class="fa fa-star text-white"></i></li>
+                        <li><i class="fa fa-star text-white"></i></li>
+                        <li><i class="fa fa-star text-white"></i></li>
                     </ul>
+                    <span class="moves text-white">0</span> <span class="text-white">Move(s)</span>
+                    <div class="timer text-white"></div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-    <div id="cards" class="container-fluid px-0 h-100">
-        <div class="row text-white h-100">
-            <img class="w-100" src="assets/images/cards-img.jpeg" alt="A boy with a candle in a haunted house">
-            <div>
-                <h1 class="display-4">
-                    Welcome to the Halloween Story Adventure Game!
-                </h1>
-                <p>In this fun Halloween game, visit ..... </p>
-                <div class="my-5">
-                    <h3>
-                        <a href="" class="btn btn-lg play-btn text-uppercase py-3">Click here to play</a>
-                    </h3>
+            <div class="col-6">
+                <div class="restart text-center text-white" onclick=startGame()>
+                    Reload <i class="fas fa-redo"></i>
                 </div>
             </div>
         </div>
+        <ul class="deck row mx-3 pe-3 justify-content-center" id="js-card-deck">
+            <li class="col-12 col-md-4 js-card card match" type="halloween">
+                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game halloween">
+            </li>
+            <li class="col-12 col-md-4 card js-card card" type="pumpkin">
+                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game pumpkin">
+            </li>
+            <li class="col-12 col-md-4 card js-card match" type="halloween">
+                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game halloween">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="witch">
+                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game witch">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="pumpkin">
+                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game pumpkin">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="witch">
+                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game witch">
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-instructions">
+                  Instructions
+                </button>
+            </div>
+        </div>
     </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<!--Modal success-->
+<div id="popup1" class="overlay">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Congratulations!</h5>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="text-dark">You made <span id="finalMove"> </span> moves </p>
+                <p class="text-dark">Total time: <span id="totalTime"> </span></p>
+                <p class="text-dark">Rating: <span id="starRating"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="play-again" class="btn btn-primary" onclick="playAgain()">Play again</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Instruction modal -->
+
+<div id="modal-instructions" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Memory game instructions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>The memory game is a basic matching game to test the player's memory.
+            In a deck of paired cards, the player needs to match each pair to win the game.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="assets/js/flipping-cards.js"></script>
 </body>
 
 </html>
