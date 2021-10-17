@@ -3,23 +3,22 @@
 body {
     height: 100vh;
     overflow-x: hidden;
-    font-family: 'Arvo', sans-serif;
+    font-family: 'Griffy', sans-serif;
 }
 
-#home {
-    background: url(../../assets/images/home.png) no-repeat center center fixed;
+.home-img {
+    background: no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-    position: relative;
+    /* overflow: hidden; */
+    /* height: 80vh;
+    width: 70vw; */
 }
 
-.jumbotron-inner {
+/* .jumbotron-inner {
     position: absolute;
-    top: 70%;
-    left: 5%;
-}
+    top: 75%;
+    left: 8%;
+} */
 
 #help {
     background: url(../../assets/images/help.jpg) no-repeat fixed center;
@@ -29,6 +28,7 @@ body {
 /*-- Navbar ---*/
 #navbar {
     background-color: #ff9e00 !important;
+    width: 100vw;
 }
 
 .navbar {
@@ -60,16 +60,22 @@ a.nav-link:active {
     color: rgb(44, 43, 43);
 }
 
-.play-btn {
+/*--- Home page button ---*/ 
+/* .play-btn {
     cursor: pointer;
-    height: 100px;
-    width: 120px;
-    padding: 10px;
+    height: 60px;
+    width: 100px;
+    padding: 8px;
     position: absolute;
     bottom: 30%;
     right: 40%;
     /* z-index: 2; */
-    text-decoration: none;
+    /* text-decoration: none;
     background: #ff9e00;
 
+} */ */
+
+footer {
+    background-color: #ff9e00;
+    margin: 0 auto;
 }
