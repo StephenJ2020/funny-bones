@@ -87,6 +87,13 @@
                      alt="Flipping cards game witch">
             </li>
         </ul>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-instructions">
+                  Instructions
+                </button>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -110,6 +117,26 @@
     </div>
 </div>
 
+<!--Instruction modal -->
+
+<div id="modal-instructions" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Memory game instructions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>The memory game is a basic matching game to test the player's memory.
+            In a deck of paired cards, the player needs to match each pair to win the game.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>

@@ -1,5 +1,4 @@
-// Source https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
-
+// MEMORY GAME: Source https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
 // cards array holds all cards
 let card = document.getElementsByClassName("js-card");
 let cards = [...card];
