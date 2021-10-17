@@ -1,10 +1,9 @@
 var myTimeOut;
 
 window.onload = function() {
-    var character = document.getElementById("character");
-    console.log(character)
-    var block = document.getElementById("block");
-    console.log(block)
+var lets_replay = document.getElementById("replay-button");
+    console.log(lets_replay)
+    lets_replay.addEventListener("click", mad_scientist)
 }
 
 
@@ -15,13 +14,14 @@ window.onload = function() {
 }
 
 
+
 function mad_scientist() {
     var games_console = document.getElementById("console");
     games_console.hidden = true;
     var game_grid = document.getElementById("game-grid");
     game_grid.hidden = false;
     myTimeOut = setTimeout(function(){ 
-        var finish_message = document.getElementById("timer");
+        var finish_message = document.getElementById("success");
         finish_message.hidden = false;
     }, 5300);
     myTimeOut();
@@ -37,18 +37,19 @@ function jump () {
 }
 }
 
+
 var check_dead = setInterval(function(){
     var game_grid = document.getElementById("game-grid");
     var height = parseInt(window.getComputedStyle(game_grid).getPropertyValue("height"));
-    console.log(height)
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"))
-    console.log(characterTop);
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"))
     var characterTopMax = height - (150 + 60);
     console.log(characterTopMax)
     if (blockLeft<20 && blockLeft>0 && characterTop>= characterTopMax){
+        replay = document.getElementById("replay");
+        game_grid.hidden = true;
+        replay.hidden = false;
         clearTimeout( myTimeOut )
-        alert("u lose");
         block.style.animation = "none";
         block.style.display = "none"
     }

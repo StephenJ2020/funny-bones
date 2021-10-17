@@ -127,11 +127,12 @@ a.nav-link:active {
 #block {
   width: 60px;
   height: 60px;
-  background-color: blue;
   position: relative;
   top: calc(50vh - 62px);
   left: 718px;
   animation: block 1s 5 linear;
+  background-image: url('/assets/images/pumpkin.png');
+  background-size: cover;
 }
 
 @keyframes block {
@@ -146,7 +147,7 @@ a.nav-link:active {
   100%{top: calc(50vh - 152px);}
 }
 
-#timer {
+#success {
   width: 300px;
   height: 50px;
   background-color: orange;
@@ -155,6 +156,18 @@ a.nav-link:active {
   top: 32vh;
   left: calc(50vw - 150px);
 }
+
+#replay {
+  width: 300px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  position: absolute;
+  top: 32vh;
+  left: calc(50vw - 150px);
+}
+
+
 
 /*------------media queries-----------------------*/
 
