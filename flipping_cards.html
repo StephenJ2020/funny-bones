@@ -38,78 +38,78 @@
 </header>
 
 <!-- Flipping cards game -->
-
-<div class="flipping-cards__overlay"></div>
-
 <section class="flipping-cards container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center my-5 text-white">Memory Game</h2>
-        </div>
-        <div class="col-6">
-            <div class="score-panel float-end">
-                <ul class="stars">
-                    <li><i class="fa fa-star text-white"></i></li>
-                    <li><i class="fa fa-star text-white"></i></li>
-                    <li><i class="fa fa-star text-white"></i></li>
-                </ul>
-                <span class="moves text-white">0</span> <span class="text-white">Move(s)</span>
-                <div class="timer text-white"></div>
+    <div class="flipping-cards__container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center my-5 text-white">Memory Game</h2>
+            </div>
+            <div class="col-6">
+                <div class="score-panel float-end">
+                    <ul class="stars">
+                        <li><i class="fa fa-star text-white"></i></li>
+                        <li><i class="fa fa-star text-white"></i></li>
+                        <li><i class="fa fa-star text-white"></i></li>
+                    </ul>
+                    <span class="moves text-white">0</span> <span class="text-white">Move(s)</span>
+                    <div class="timer text-white"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="restart text-center text-white" onclick=startGame()>
+                    Reload <i class="fas fa-redo"></i>
+                </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="restart text-center text-white" onclick=startGame()>
-                Reload <i class="fas fa-redo"></i>
-            </div>
-        </div>
+        <ul class="deck row mx-3 pe-3 justify-content-center" id="js-card-deck">
+            <li class="col-12 col-md-4 js-card card match" type="halloween">
+                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game halloween">
+            </li>
+            <li class="col-12 col-md-4 card js-card card" type="pumpkin">
+                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game pumpkin">
+            </li>
+            <li class="col-12 col-md-4 card js-card match" type="halloween">
+                <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game halloween">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="witch">
+                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game witch">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="pumpkin">
+                <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game pumpkin">
+            </li>
+            <li class="col-12 col-md-4 card js-card open show" type="witch">
+                <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
+                     alt="Flipping cards game witch">
+            </li>
+        </ul>
     </div>
-
-    <ul class="deck row mx-3 pe-3 justify-content-center" id="js-card-deck">
-        <li class="col-12 col-md-4 js-card card match" type="halloween">
-            <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
-                 alt="Flipping cards game halloween">
-        </li>
-        <li class="col-12 col-md-4 card js-card card" type="pumpkin">
-            <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
-                 alt="Flipping cards game pumpkin">
-        </li>
-        <li class="col-12 col-md-4 card js-card match" type="halloween">
-            <img src="assets/images/flipping-cards-halloween.png" class="flipping-cards__card-img"
-                 alt="Flipping cards game halloween">
-        </li>
-        <li class="col-12 col-md-4 card js-card open show" type="witch">
-            <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
-                 alt="Flipping cards game witch">
-        </li>
-        <li class="col-12 col-md-4 card js-card open show" type="pumpkin">
-            <img src="assets/images/flipping-cards-pumpkin.png" class="flipping-cards__card-img"
-                 alt="Flipping cards game pumpkin">
-        </li>
-        <li class="col-12 col-md-4 card js-card open show" type="witch">
-            <img src="assets/images/flipping-cards-witch.png" class="flipping-cards__card-img"
-                 alt="Flipping cards game witch">
-        </li>
-    </ul>
 </section>
 
 <!--Modal success-->
 <div id="popup1" class="overlay">
-    <div class="popup">
-        <h2>Congratulations 🎉</h2>
-        <a class="close" href=#>×</a>
-        <div class="content-1">
-            Congratulations you're a winner 🎉🎉
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Congratulations!</h5>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="text-dark">You made <span id="finalMove"> </span> moves </p>
+                <p class="text-dark">Total time: <span id="totalTime"> </span></p>
+                <p class="text-dark">Rating: <span id="starRating"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="play-again" class="btn btn-primary" onclick="playAgain()">Play again</button>
+            </div>
         </div>
-        <div class="content-2">
-            <p>You made <span id=finalMove> </span> moves </p>
-            <p>in <span id=totalTime> </span></p>
-            <p>Rating: <span id=starRating></span></p>
-        </div>
-        <button id="play-again" onclick="playAgain()">
-            Play again 😄</a>
-        </button>
     </div>
 </div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
