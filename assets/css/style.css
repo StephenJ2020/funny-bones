@@ -61,7 +61,7 @@ a.nav-link:active {
 .flipping-cards {
     background: url("../images/cards-img.png") no-repeat fixed center;
     background-size: cover;
-    height: 100%;
+    height: 150vh;
 }
 
 .flipping-cards__card-img {
@@ -72,19 +72,7 @@ a.nav-link:active {
     font-family: 'Arvo', sans-serif;
 }
 
-/*Source https://www.codegrepper.com/code-examples/css/how+to+make+dark+overlay+css*/
-.flipping-cards__overlay {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #5f5141;
-    opacity: 0.8;
-	z-index: 0;
-}
-
 .flipping-cards__header {
-    /*position: absolute;*/
 	max-width: 70vw;
 }
 
@@ -121,7 +109,7 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 	text-decoration: none;
 	list-style: none;
-	margin: 0.5rem;
+	margin: 1rem;
 }
 
 .deck .js-card img {
