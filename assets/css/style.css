@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Arvo', sans-serif;
+    overflow-x: hidden;
 
 }
 
