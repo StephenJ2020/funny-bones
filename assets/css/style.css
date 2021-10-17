@@ -107,7 +107,6 @@ a.nav-link:active {
   border: solid black 1px;
   display: flex;
   flex-wrap: wrap;
-  left: 2vw;
   position: relative;
 }
 
@@ -132,7 +131,7 @@ a.nav-link:active {
   position: relative;
   top: calc(50vh - 62px);
   left: 718px;
-  animation: block 1s infinite linear;
+  animation: block 1s 5 linear;
 }
 
 @keyframes block {

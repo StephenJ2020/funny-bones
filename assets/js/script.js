@@ -3,7 +3,7 @@ window.onload = function() {
     console.log(character)
     var block = document.getElementById("block");
     console.log(block)
-    }
+}
 
 
 window.onload = function() {
@@ -18,6 +18,10 @@ function mad_scientist() {
     games_console.hidden = true;
     var game_grid = document.getElementById("game-grid");
     game_grid.hidden = false;
+    setTimeout(function(){ 
+        var finish_message = document.getElementById("timer");
+        finish_message.hidden = false;
+    }, 5300);
 }
 
 
@@ -45,69 +49,6 @@ var check_dead = setInterval(function(){
         block.style.display = "none"
     }
 },10);
-    
 
-var timeoutHandle;
-
-function countdown(minutes, seconds) {
-var seconds = 60;
-var mins = minutes
-
-function tick() {
-    var counter = document.getElementById("timer");
-    var current_minutes = mins - 1
-    seconds--;
-    counter.innerHTML =
-    current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
-    if (seconds > 0) {
-    timeoutHandle = setTimeout(tick, 1000);
-    } else {
-
-    if (mins > 1) {
-
-        // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
-        setTimeout(function() {
-        countdown(mins - 1);
-        }, 1000);
-
-    }
-    }
-}
-tick();
-}
-
-countdown(2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*function get_grid() {
-    const grid = document.querySelector("#game-grid");
-    for (let i = 0; i < 225; i++){
-    const square = document.createElement('div');
-    grid.appendChild(square)
-}}
-
-
-/*function draw () {
-    const squares = Array.from(document.querySelectorAll('#game-grid div'))
-    console.log(squares);
-    for (let i = 0; i < alienInvaders.length; i++) {
-        squares[alienInvaders[i]].classList.add('invader')
-    }
-}
-
-draw()
-
-squares[currentShooterIndex].classList.add('shooter')*/
 
 
