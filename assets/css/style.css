@@ -8,6 +8,16 @@ body {
     font-family: 'Arvo', sans-serif;
 }
 
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+}
+
 #home,
 #cards {
     background: no-repeat center center fixed;
@@ -91,7 +101,7 @@ a.nav-link:active {
 }
 
 #game-grid {
-  width: 602px;
+  width: 800px;
   margin-top: 10rem;
   text-align: center;
   height: 60vh;
@@ -100,10 +110,40 @@ a.nav-link:active {
   flex-wrap: wrap;
 }
 
-#game-grid div {
-  width: 40px;
-  height: 6.6%;
-} 
+
+#character {
+  width: 20px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+  top: calc(60vh - 152px);
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+#block {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  position: relative;
+  top: calc(60vh - 62px);
+  left: 718px;
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0%{left: 720px;}
+  100%{left: -40px;}
+}
+
+@keyframes jump {
+  0%{top: calc(60vh - 152px);}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: calc(60vh - 152px);}
+}
 
 /*------------media queries-----------------------*/
 
