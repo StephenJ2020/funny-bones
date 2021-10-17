@@ -41,7 +41,7 @@
 
     <div id="space_evader" class="container-fluid px-0 h-100">
         <div class="row text-white h-100 background-pic" alt='An empty room covered in cobwebs and a portait of a scientist and his son'>
-                <!--<div class="mx-auto" id="console">
+                <div class="mx-auto" id="console">
                     <h1 class="display-4">
                         Welcome to the Halloween Story Adventure Game!
                     </h1>
@@ -51,8 +51,9 @@
                             <a id="play-button" class="btn btn-lg play-btn text-uppercase py-3">Click here to play</a>
                         </h3>
                     </div>
-                </div>-->
-                <div class="mx-auto no-padding" id="game-grid" onclick="jump()">
+                </div>
+                <div id="timer"></div>
+                <div class="mx-auto no-padding" hidden id="game-grid" onclick="jump()">
                     <div id="character"></div>
                     <div id="block"></div>
                 </div>                   

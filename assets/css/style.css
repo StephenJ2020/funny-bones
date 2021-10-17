@@ -102,12 +102,13 @@ a.nav-link:active {
 
 #game-grid {
   width: 800px;
-  margin-top: 10rem;
   text-align: center;
-  height: 60vh;
+  height: 50vh;
   border: solid black 1px;
   display: flex;
   flex-wrap: wrap;
+  left: 2vw;
+  position: relative;
 }
 
 
@@ -116,7 +117,8 @@ a.nav-link:active {
   height: 150px;
   background-color: red;
   position: relative;
-  top: calc(60vh - 152px);
+  top: calc(50vh - 152px);
+  left: 0px;
 }
 
 .animate {
@@ -128,7 +130,7 @@ a.nav-link:active {
   height: 60px;
   background-color: blue;
   position: relative;
-  top: calc(60vh - 62px);
+  top: calc(50vh - 62px);
   left: 718px;
   animation: block 1s infinite linear;
 }
@@ -139,10 +141,20 @@ a.nav-link:active {
 }
 
 @keyframes jump {
-  0%{top: calc(60vh - 152px);}
+  0%{top: calc(50vh - 152px);}
   30%{top: 100px;}
   70%{top: 100px;}
-  100%{top: calc(60vh - 152px);}
+  100%{top: calc(50vh - 152px);}
+}
+
+#timer {
+  width: 300px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  position: absolute;
+  top: 32vh;
+  left: calc(50vw - 150px);
 }
 
 /*------------media queries-----------------------*/
