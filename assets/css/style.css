@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap');
 
 body {
-    font-family: 'Griffy', sans-serif;
+    font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
-
+    height: calc(100vh-164px);
+    width: 100vw;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: Creepster, sans-serif;
+}
 #home {
-    height: 100vh;
-    overflow-x: hidden;
-    font-family: 'Griffy', sans-serif;
+    height: 89vh;
+    overflow: hidden;
 }
 
 img[usemap] {
@@ -17,7 +19,7 @@ img[usemap] {
     background-size: cover;
     width: 100vw;
     overflow: hidden;
-    height: 100vh;
+    height: 89vh;
 }
 
 #help {
@@ -49,7 +51,7 @@ a.nav-link {
 
 .navbar-brand img {
     height: 2.7rem;
-    width: 2.7rem;
+    width: 3.1rem;
     padding-left: 0.5rem;
 }
 
@@ -116,7 +118,7 @@ a.nav-link:active {
     margin-left: 15%;
     margin-right: 15%; 
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     padding-left: 20px;
     padding-right: 20px;
     line-height: 1.5;
@@ -124,6 +126,9 @@ a.nav-link:active {
     max-height: 70vh;
 }
 
+#story-page p {
+    letter-spacing: 2px;
+}
 /* #story-page {
     overflow-y: hidden;
     overflow-x: hidden;
