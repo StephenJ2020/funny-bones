@@ -15,46 +15,47 @@
 </head>
 
 <body>
-
-    <!-- Navigation Bar-->
-    <header>
-        <nav id="navbar" class="navbar navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex" href="index.html"><img src="assets/images/castle-house.png"
-                    alt="Halloween haunted house and glowing pumpkins in the night"
-                    title="Logo"><span class="d-none d-md-inline-block">&nbsp; Funny Bones - Interactive Halloween Story!</span></a>
-                <div class="d-flex me-2">
-                    <div class="nav-item"><a class="nav-link" href="help.html">Help</a></div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-    <div id="space_evader" class="container-fluid px-0 h-100">
-        <div class="row text-white h-100 background-image-jump" alt='An empty room covered in cobwebs and a portait of a scientist and his son'>
-                <div id="console">
-                    <h1 class="display-4">
-                        Welcome to the Halloween Story Adventure Game!
-                    </h1>
-                    <p>In this fun Halloween game, visit ..... </p>
-                    <div class="my-5">
-                        <h3>
-                            <a id="play-button" class="btn btn-lg play-btn text-uppercase py-3 jump-button">Click here to play</a>
-                        </h3>
+    <div id="jump-style-1">
+        <!-- Navigation Bar-->
+        <header>
+            <nav id="navbar" class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex" href="index.html"><img src="assets/images/castle-house.png"
+                        alt="Halloween haunted house and glowing pumpkins in the night"
+                        title="Logo"><span class="d-none d-md-inline-block">&nbsp; Funny Bones - Interactive Halloween Story!</span></a>
+                    <div class="d-flex me-2">
+                        <div class="nav-item"><a class="nav-link" href="help.html">Help</a></div>
                     </div>
                 </div>
-                <div id="replay" hidden><a id="replay-button" class="btn btn-lg play-btn text-uppercase py-3 w-100 jump-button">Click here to replay</a></div>
-                <div hidden id="game-grid" onclick="jump()">
-                    <div id="success" hidden>Woohoo! You passed!</div>
-                    <div id="character"></div>
-                    <div id="block"></div>
-                    <div id="finished_pic" hidden></div>
-                </div>
-        </div>
-    </div>
+            </nav>
+        </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+        <div id="space_evader" class="container-fluid px-0 h-100">
+            <div class="row text-white h-100 background-image-jump" alt='An empty room covered in cobwebs and a portait of a scientist and his son'>
+                    <div id="console">
+                        <h1 class="display-4">
+                            Welcome to the Halloween Story Adventure Game!
+                        </h1>
+                        <p>In this fun Halloween game, visit ..... </p>
+                        <div class="my-5">
+                            <h3>
+                                <a id="play-button" class="btn btn-lg play-btn text-uppercase py-3 jump-button">Click here to play</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="replay" hidden><a id="replay-button" class="btn btn-lg play-btn text-uppercase py-3 w-100 jump-button">Click here to replay</a></div>
+                    <div hidden id="game-grid" onclick="jump()">
+                        <div id="success" hidden>Woohoo! You passed!</div>
+                        <div id="character"></div>
+                        <div id="block"></div>
+                        <div id="finished_pic" hidden></div>
+                    </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </div>
 </body>
 </html>

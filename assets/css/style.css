@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
 
 body {
-    background-size: cover;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
     font-family: 'Arvo', sans-serif;
 }
 
@@ -74,6 +70,13 @@ a.nav-link:active {
 }
 
 /*-------------game console-----------------------*/
+
+#jump-style-1 {
+  background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 #console {
   width: 600px;
