@@ -1,18 +1,17 @@
 var myTimeOut;
 
-window.onload = function() {
-var lets_replay = document.getElementById("replay-button");
-    console.log(lets_replay)
-    lets_replay.addEventListener("click", mad_scientist)
-}
-
 
 window.onload = function() {
-    console.log("boomshki")
     var lets_play = document.getElementById("play-button");
     lets_play.addEventListener("click", mad_scientist)
+    var lets_replay = document.getElementById("replay-button");
+    lets_replay.addEventListener("click", reloader)
 }
 
+
+function reloader (){
+    window.location.reload();
+}
 
 
 function mad_scientist() {
@@ -20,14 +19,16 @@ function mad_scientist() {
     games_console.hidden = true;
     var game_grid = document.getElementById("game-grid");
     game_grid.hidden = false;
+    var viewport_width = window.innerWidth;
     myTimeOut = setTimeout(function(){ 
         var finish_message = document.getElementById("success");
         finish_message.hidden = false;
-        var scientist = document.getElementById("character");
-        console.log(scientist)
-        scientist.setAttribute("style","width:300px");
-        scientist.setAttribute("style","height:0px");
-        scientist.setAttribute("style","top:40px");
+        if (viewport_width > 700) {
+            var big_scientist = document.getElementById("finished_pic");
+            big_scientist.hidden = false;
+        }
+        var little_scientist = document.getElementById("character");
+        little_scientist.hidden = true;
     }, 5300);
     myTimeOut();
 }
@@ -49,7 +50,6 @@ var check_dead = setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"))
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"))
     var viewport_width = window.innerWidth;
-    console.log(viewport_width);
     if (viewport_width < 700) {
         var characterTopMax = height - (75 + 30);
         var width_value = 50;
@@ -58,7 +58,6 @@ var check_dead = setInterval(function(){
         var characterTopMax = height - (150 + 60);
         var width_value = 100;
     }
-    console.log(characterTopMax)
     if (blockLeft<width_value && blockLeft>0 && characterTop>= characterTopMax){
         replay = document.getElementById("replay");
         game_grid.hidden = true;

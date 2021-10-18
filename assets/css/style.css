@@ -96,13 +96,12 @@ a.nav-link:active {
 
 #console {
   width: 600px;
-  margin-top: 12rem;
+  margin-top: 8rem;
   text-align: center;
   background-color: #ff8500;
   border-radius: 10px;
   font-family: 'Creepster', sans-serif;
   border: solid black 6px;
-  padding: 20px;
 }
 
 #game-grid {
@@ -127,6 +126,7 @@ a.nav-link:active {
   background-image: url('/assets/images/mad_scientist.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 60px;
 }
 
 .animate {
@@ -194,16 +194,19 @@ a:hover {
   border: solid white 5px;
 }
 
+#finished_pic {
+width: 300px;
+    /* height: 150px; */
+    /* position: relative; */
+    /* top: calc(50vh - 162px); */
+    /* left: 0px; */
+    background-image: url(/assets/images/mad_scientist.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*------------media queries-----------------------*/
-
-@media only screen and (min-width:1180px) {
-    .navbar {
-      opacity: 1.0;
-    }
-}
-
 
 @media only screen and (max-width:700px) {
   #character {
