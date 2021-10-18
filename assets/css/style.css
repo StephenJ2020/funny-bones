@@ -3,22 +3,71 @@
 body {
     font-family: 'Arvo', sans-serif;
 }
+
+
+/*.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+}*/
+
 #home {
-    height: 89vh;
-    font-family: 'Griffy', sans-serif;
+  height: 89vh;
+  font-family: 'Griffy', sans-serif;
 }
 
 img[usemap] {
-    width: 100vw;
-    height: 89vh;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
+  width: 100vw;
+  height: 89vh;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 
 #help {
-    background: url(../../assets/images/help.jpg) no-repeat fixed center;
-    background-size: cover;
+  background: url(../../assets/images/help.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+/* Override Bootstrap css */
+.row {
+  --bs-gutter-x: 0;
+}
+
+/* Homepage Media Queries */
+
+@media (min-width: 768px) {
+  img[usemap] {
+      width: 100vw;
+      height: 89vh;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+  }
+  #home {
+      height: 89vh;
+      overflow-x: hidden;
+      font-family: 'Griffy', sans-serif;
+  }
+}
+
+@media (min-width: 1200px) {
+  img[usemap] {
+      width: 100vw;
+      height: 90vh;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+  }
+  #home {
+      height: 90vh;
+      overflow-x: hidden;
+      font-family: 'Griffy', sans-serif;
+  }
 }
 
 /* Override Bootstrap css */
@@ -59,162 +108,165 @@ img[usemap] {
 }
 
 /* -------- Animation flying bats ----
- Source https://codepen.io/andri-lly-jachn/pen/yLVVpGb*/
+Source https://codepen.io/andri-lly-jachn/pen/yLVVpGb*/
 
 .snowflake {
-    color: #fff;
-    font-size: 1em;
-    font-family: Serif;
-    text-shadow: 0 0 1px #000;
+  color: #fff;
+  font-size: 1em;
+  font-family: Serif;
+  text-shadow: 0 0 1px #000;
 }
 
 @-webkit-keyframes snowflakes-fall {
-    0% {
-        top: -10%
-    }
-    100% {
-        top: 100%
-    }
+  0% {
+      top: -10%
+  }
+  100% {
+      top: 100%
+  }
 }
 
 @-webkit-keyframes snowflakes-shake {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px)
-    }
-    50% {
-        -webkit-transform: translateX(80px);
-        transform: translateX(80px)
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px)
-    }
+  0% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px)
+  }
+  50% {
+      -webkit-transform: translateX(80px);
+      transform: translateX(80px)
+  }
+  100% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px)
+  }
 }
 
 @keyframes snowflakes-fall {
-    0% {
-        top: -10%
-    }
-    100% {
-        top: 100%
-    }
+  0% {
+      top: -10%
+  }
+  100% {
+      top: 100%
+  }
 }
 
 @keyframes snowflakes-shake {
-    0% {
-        transform: translateX(0px)
-    }
-    50% {
-        transform: translateX(80px)
-    }
-    100% {
-        transform: translateX(0px)
-    }
+  0% {
+      transform: translateX(0px)
+  }
+  50% {
+      transform: translateX(80px)
+  }
+  100% {
+      transform: translateX(0px)
+  }
 }
 
 .snowflake {
-    position: fixed;
-    top: -10%;
-    z-index: 9999;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-    -webkit-animation-duration: 10s, 3s;
-    -webkit-animation-timing-function: linear, ease-in-out;
-    -webkit-animation-iteration-count: infinite, infinite;
-    -webkit-animation-play-state: running, running;
-    animation-name: snowflakes-fall, snowflakes-shake;
-    animation-duration: 10s, 3s;
-    animation-timing-function: linear, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-    animation-play-state: running, running
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running
 }
 
 .snowflake:nth-of-type(0) {
-    left: 1%;
-    -webkit-animation-delay: 0s, 0s;
-    animation-delay: 0s, 0s
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s
 }
 
 .snowflake:nth-of-type(1) {
-    left: 10%;
-    -webkit-animation-delay: 1s, 1s;
-    animation-delay: 1s, 1s
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s
 }
 
 .snowflake:nth-of-type(2) {
-    left: 20%;
-    -webkit-animation-delay: 6s, .5s;
-    animation-delay: 6s, .5s
+  left: 20%;
+  -webkit-animation-delay: 6s, .5s;
+  animation-delay: 6s, .5s
 }
 
 .snowflake:nth-of-type(3) {
-    left: 30%;
-    -webkit-animation-delay: 4s, 2s;
-    animation-delay: 4s, 2s
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s
 }
 
 .snowflake:nth-of-type(4) {
-    left: 40%;
-    -webkit-animation-delay: 2s, 2s;
-    animation-delay: 2s, 2s
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s
 }
 
 .snowflake:nth-of-type(5) {
-    left: 50%;
-    -webkit-animation-delay: 8s, 3s;
-    animation-delay: 8s, 3s
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s
 }
 
 .snowflake:nth-of-type(6) {
-    left: 60%;
-    -webkit-animation-delay: 6s, 2s;
-    animation-delay: 6s, 2s
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s
 }
 
 .snowflake:nth-of-type(7) {
-    left: 70%;
-    -webkit-animation-delay: 2s, 1s;
-    animation-delay: 2s, 1s
+  left: 70%;
+  -webkit-animation-delay: 2s, 1s;
+  animation-delay: 2s, 1s
 }
 
 .snowflake:nth-of-type(8) {
-    left: 80%;
-    -webkit-animation-delay: 1s, 0s;
-    animation-delay: 1s, 0s
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s
 }
 
 .snowflake:nth-of-type(9) {
-    left: 90%;
-    -webkit-animation-delay: 3s, 1s;
-    animation-delay: 3s, 1s;
+  left: 90%;
+  -webkit-animation-delay: 3s, 1s;
+  animation
+  delay: 3s, 1s
+
 }
 
 .snowflake:nth-of-type(10)
-    /* Demo Purpose Only*/
+  /* Demo Purpose Only*/
 .demo {
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-    display: block;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
 }
 
 .demo a {
-    font-family: 'Raleway', sans-serif;
-    color: #000;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
 }
 
 .snowflake img {
-    height: 40px;
-    bottom: 0;
-    display: block;
+  height: 40px;
+  bottom: 0;
+  display: block;
 }
+
 
 /*-- Navbar ---*/
 #navbar {
@@ -277,6 +329,169 @@ a.nav-link:active {
 .play-btn {
     background: white;
     color: black;
+}
+
+
+/*-------------------------------Space invaders------------------*/
+
+
+/*---------------background-image-----------------*/
+
+.background-image-jump {
+    background: url('../images/space_invader.jpeg') no-repeat fixed center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/*-------------game console-----------------------*/
+
+#jump-style-1 {
+  background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#console {
+  width: 600px;
+  margin-top: 8rem;
+  text-align: center;
+  background-color: #ff8500;
+  border-radius: 10px;
+  font-family: 'Creepster', sans-serif;
+  border: solid black 6px;
+  margin: auto
+}
+
+#game-grid {
+  width: 800px;
+  text-align: center;
+  height: 50vh;
+  border: solid orange 6px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 10px;
+  background: black;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+#character {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  top: calc(50vh - 162px);
+  left: 0px;
+  background-image: url('../images/mad_scientist.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 60px;
+}
+
+.animate-jump {
+  animation: jump 500ms;
+}
+
+#block {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: calc(50vh - 72px);
+  left: 718px;
+  animation: block 1s 5 linear;
+  background-image: url('../images/pumpkin.png');
+  background-size: cover;
+}
+
+@keyframes block {
+  0%{left: 650px;}
+  100%{left: -40px;}
+}
+
+@keyframes jump {
+  0%{top: calc(50vh - 162px);}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: calc(50vh - 162px);}
+}
+
+#success {
+  width: 300px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+  font-family: 'Creepster', sans-serif;
+  font-size: 2rem;
+}
+
+#replay {
+  width: 300px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  position: absolute;
+  top: 32vh;
+  left: calc(50vw - 150px);
+}
+
+.jump-button:hover {
+  border: solid black 1px;
+}
+
+#replay-button {
+  text-align: center;
+  background-color: #ff8500;
+  border-radius: 10px;
+  font-family: 'Creepster', sans-serif;
+  border: solid black 6px;
+  padding: 20px;
+}
+
+#replay-button:hover {
+  border: solid white 5px;
+}
+
+#finished_pic {
+    width: 300px;
+    background-image: url(../images/mad_scientist.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*------------media queries-----------------------*/
+
+@media only screen and (max-width:700px) {
+  #character {
+    width: 50px;
+    height: 75px;
+    position: relative;
+    top: calc(50vh - 87px);
+  }
+  #block {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: calc(50vh - 42px);
+  }
+
+  @keyframes block {
+    0%{left: 650px;}
+    100%{left: -40px;}
+  }
+  
+  @keyframes jump {
+    0%{top: calc(50vh - 162px);}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: calc(50vh - 162px);}
+  }
 }
 
 #story-page img{
@@ -380,12 +595,13 @@ h1 {
 }
 
 
+
 /*-- Whack-A-Ghost --*/
 
 .bg-image {
     width: 100%;
     height: 93vh;
-    background: url('../images/space_evader.png') center center / cover no-repeat fixed;
+    background: url('../images/whack_a_ghost.png') center center / cover no-repeat fixed;
     position: relative;
     overflow: hidden;
     background-size: cover;
@@ -477,7 +693,7 @@ h1 {
     .bg-image {
         width: 100%;
         height: 94vh;
-        background: url('../images/space_evader.png') center center / cover no-repeat fixed;
+        background: url('../images/whack_a_ghost.png') center center / cover no-repeat fixed;
         position: relative;
         overflow: hidden;
         background-size: cover;
