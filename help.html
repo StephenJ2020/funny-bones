@@ -20,7 +20,9 @@
         <nav id="navbar" class="navbar navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex" href="index.html"><img src="assets/images/castle-house.png"
-                        alt="Halloween haunted house and glowing pumpkins in the night" title="Logo"></a>
+                        alt="Halloween haunted house and glowing pumpkins in the night" title="Logo"><span
+                        class="d-none my-auto d-md-inline-block">&nbsp; Funny Bones - Interactive Halloween
+                        Story!</span></a>
                 <div class="d-flex me-2">
                     <div class="nav-item"><a class="nav-link" href="help.html">Help</a></div>
                 </div>
@@ -28,17 +30,121 @@
         </nav>
     </header>
 
-    <div id="help" class="container-fluid px-0 h-100">
-        <div class="row text-white h-100">
-            <!-- <img class="w-100" src="assets/images/help.jpg" alt="A view of a house and glowing pumpkins in the night">
+    <div id="help" class="container-fluid">
+        <div class="row text-white h-100 w-50 mx-auto mb-3 help_overlay">
+            <!--Accordion-->
+            <div id="my-accordion">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Jump
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h3>Aim</h3>
+                                Help the mad scientist jump over the evil pumpkins!
+                                <h3>How To Play</h3>
+                                Click anywhere on the black screen in order to make the mad scientist jump. Time his
+                                jumps correctly so that the pumpkin passes underneath him.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Flipping Cards
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h3>Aim</h3>
+                                This is a card game in which all 6 cards are laid face down on a surface and
+                                two cards are flipped face up over each turn. The object of the game is to turn over
+                                pairs of
+                                matching cards.
+                                <h3>How To Play</h3>This game can be played by any number of players. Flip the cards
+                                over by
+                                using your mouse or finger tap on mobile devices to reveal the pictures and match the
+                                pairs.
+                                The game ends when the last pair has been matched up.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Whack A Ghost
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h3>Aim</h3>This game is based on the original Whac-A-Mole. The aim of the game is to
+                                click on as many ghosts as you can before they disapper, see if you can beat your
+                                highest score.
+                                <h3>How To Play</h3> On the screen click start, as the game begins you will see little
+                                ghosts appear from the floor in a random order. If you are on your desktop use your
+                                mouse to click on a ghost before it disappears, but if on a mobile device you may use
+                                your fingers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Help Forms-->
             <div>
-                 -->
-
+                <form>
+                    <div class="form-row">
+                        <div class="form-check form-check-inline">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-check form-check-inline mt-2">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                </form>
+                <form class="form-pos">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Choose From The List:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Offer A Suggestion</option>
+                            <option>Report A Problem</option>
+                            <option>Request Information</option>
+                            <option>Ask A Question</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Text You Wish To Send:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+                <div class="mx-auto">
+                    <button type="button" class="btn btn-dark pos my-3 px-3 py-2">Send</button>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="footer">
+        <div class="copyright py-1 my-auto w-100"><a class="copyright" target="_blank"
+                href="https://github.com/StephenJ2020/funny-bones">Copyright 2021 Funny
+                Bones</a></div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

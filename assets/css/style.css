@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap');
 
 body {
     font-family: 'Arvo', sans-serif;
 }
+
 
 /*.row {
   --bs-gutter-x: 0;
@@ -67,6 +68,43 @@ img[usemap] {
       overflow-x: hidden;
       font-family: 'Griffy', sans-serif;
   }
+}
+
+/* Override Bootstrap css */
+.row {
+    --bs-gutter-x: 0;
+}
+
+/* Homepage Media Queries */
+
+@media (min-width: 768px) {
+    img[usemap] {
+        width: 100vw;
+        height: 89vh;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    #home {
+        height: 89vh;
+        overflow-x: hidden;
+        font-family: 'Griffy', sans-serif;
+    }
+}
+
+@media (min-width: 1200px) {
+    img[usemap] {
+        width: 100vw;
+        height: 90vh;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    #home {
+        height: 90vh;
+        overflow-x: hidden;
+        font-family: 'Griffy', sans-serif;
+    }
 }
 
 /* -------- Animation flying bats ----
@@ -204,6 +242,7 @@ Source https://codepen.io/andri-lly-jachn/pen/yLVVpGb*/
   -webkit-animation-delay: 3s, 1s;
   animation
   delay: 3s, 1s
+
 }
 
 .snowflake:nth-of-type(10)
@@ -232,7 +271,7 @@ Source https://codepen.io/andri-lly-jachn/pen/yLVVpGb*/
 /*-- Navbar ---*/
 #navbar {
     background-color: #ff9e00 !important;
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar {
@@ -253,6 +292,7 @@ a.nav-link {
 
 .navbar-brand img {
     height: 2.7rem;
+    width: 3.1rem;
     padding-left: 0.5rem;
 }
 
@@ -291,13 +331,14 @@ a.nav-link:active {
     color: black;
 }
 
+
 /*-------------------------------Space invaders------------------*/
 
 
 /*---------------background-image-----------------*/
 
 .background-image-jump {
-    background: url('/assets/images/space_invader.jpeg') no-repeat fixed center center;
+    background: url('../images/space_invader.jpeg') no-repeat fixed center center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -345,7 +386,7 @@ a.nav-link:active {
   position: relative;
   top: calc(50vh - 162px);
   left: 0px;
-  background-image: url('/assets/images/mad_scientist.png');
+  background-image: url('../images/mad_scientist.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 60px;
@@ -362,7 +403,7 @@ a.nav-link:active {
   top: calc(50vh - 72px);
   left: 718px;
   animation: block 1s 5 linear;
-  background-image: url('/assets/images/pumpkin.png');
+  background-image: url('../images/pumpkin.png');
   background-size: cover;
 }
 
@@ -418,7 +459,7 @@ a.nav-link:active {
 
 #finished_pic {
     width: 300px;
-    background-image: url(/assets/images/mad_scientist.png);
+    background-image: url(../images/mad_scientist.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -453,33 +494,127 @@ a.nav-link:active {
   }
 }
 
+#story-page img{
+    background: no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+    height: 89vh;
+    position: relative;
+    background-size: cover;
+}
+
+.text-block {
+    position: absolute;
+    top: 15vh;
+    bottom: 15vh;
+    margin-left: 15%;
+    margin-right: 15%; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+#story-page p {
+    letter-spacing: 2px;
+}
+
+
+.end-p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/*-- Help Page Css --*/
+#help {
+  background: url(../images/help.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  overflow: hidden;
+  /* height: 100vh; */
+  width: 100%;
+  position: relative;
+}
+/*-- Accordion --*/
+#my-accordion {
+  margin-top: 100px;
+  margin-right: 200px;
+  }
+
+.accordion-button {
+  color: #ff8500;
+  background-color:#5a189a;
+  text-align: center;
+}
+
+.accordion-collapse.collapse.show {
+  background-color:#ff8500;
+}
+
+.accordion-header {
+  color: #9d4edd;
+}
+/*-- Help Forms --*/
+/* .mb-1 {
+  margin-top: 150px;
+} */
+h1 {
+  margin-top: 100px
+}
+/*Source https://www.codegrepper.com/code-examples/css/how+to+make+dark+overlay+css*/
+/* .help-overlay {
+  position: 0;
+  top: 100;
+  left: 100;
+  width: 50%;
+  height: 10%;
+  background-color: #791a91;
+  opacity: 0.8;
+} */
+
+.form-row {
+    margin-top: 80px;
+}
+
+.pos {
+  margin-top: 20px;
+  background-color: #5a189a;
+}
+
+.form-check {
+  padding-left: 0px;
+}
+
+.exampleFormControlInput1 {
+  color:#5a189a
+}
+
+
+
 /*-- Whack-A-Ghost --*/
 
 .bg-image {
     width: 100%;
-    height: 100vh;
-    background: url('../images/space_evader.png') center center / cover no-repeat fixed;
-    overflow: hidden;
+    height: 93vh;
+    background: url('../images/whack_a_ghost.png') center center / cover no-repeat fixed;
     position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
-/*Source https://www.codegrepper.com/code-examples/css/how+to+make+dark+overlay+css*/
-/* .whack-a-ghost__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #5f5141;
-  opacity: 0.8;
-} */
 
 .h1 {
     text-align: center;
-    font-size: 4rem;
-    color: #fff;
+    font-size: 2rem;
+    color: #ffffff;
     line-height: 1.5;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -554,6 +689,16 @@ a.nav-link:active {
         display: flex;
         flex-wrap: wrap;
         margin: 40px auto;
+    }
+    .bg-image {
+        width: 100%;
+        height: 94vh;
+        background: url('../images/whack_a_ghost.png') center center / cover no-repeat fixed;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -729,6 +874,7 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 .overlay:target {
     visibility: visible;
     opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-title {
@@ -737,11 +883,26 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 
 .modal-content {
     background-color: #ff8500;
+    font-weight: bold;
 }
 
 .show {
     visibility: visible !important;
-    opacity: 100 !important;
+    opacity: 0.85 !important;
+}
+
+.modal-footer {
+    display: inline-block;
+}
+
+#bg-modal-footer {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+#modal-footer-heading {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #starRating li {
@@ -834,4 +995,5 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 .copyright:hover {
     color: #fff;
 }
+
 
