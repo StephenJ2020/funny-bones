@@ -1,11 +1,11 @@
-![Banner Image](assets/images/rm-banner-image.jpg)   
+[![Mock-up](assets/images/mock-up.png)](https://stephenj2020.github.io/funny-bones/index.html) 
 
 This project was created for Code Institute's Halloween 'Spookathon' - October 2021 by the Funny Bones team.   
 The main goal of the Funny Bones Interactive Adventure Story Book is to familiarize children with popular Halloween stories in a fun, play-based way. 
 
 In this interactive app, children are the creators of their own story!
 
-[Funny Bones - Live Site]()  
+[Funny Bones - Live Site](https://stephenj2020.github.io/funny-bones/index.html)  
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)    
   
@@ -255,9 +255,17 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 # Testing  
 ------  
 ## Code Validity
+* LightHouse Scores:  
+  - ![Index](assets/images/lighthouse-index.png)  
+  - ![Memory Game](assets/images/lighthouse-memory-game.png)  
+  - ![Whack-a-Ghost](assets/images/lighthouse-ghost.png)  
+    
 * HTML Markup Validation Service - 
-* CSS Validation Service - 
-* JavaScript Code Quality Tool JSHint - 
+ ![HMTL](assets/images/html-validation.png)  
+* CSS Validation Service -  
+![CSS](assets/images/css-validation.png)  
+* JavaScript Code Quality Tool JSHint -  
+![CSS](assets/images/JS-validation.png)  
   
 ## Testing User Stories
 * *First time user stories:*
@@ -283,12 +291,19 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 
 * [Image map tool](https://www.image-map.net/)
 * To make image map responsive [RWD Image Maps](https://github.com/stowball/jQuery-rwdImageMaps)
-*  
-
+* [Image for Jump Game](https://storybird.s3.amazonaws.com/artwork/Jevs/full/scientist-haunted-house.jpeg)  
+* [Image for Whack-a-ghost](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3022922d-d7d2-447e-8a28-343d228f0b0e/d5jlspq-e8627073-b94d-4efc-8d00-356c544bcc3d.png)  
+* [Image of ghost](https://cdn.imgbin.com/19/14/15/imgbin-ghost-silhouette-ghost-eShcjvqbimNytaYEVJfQPYt6k.jpg)  
+* [Image for Memory Game](https://storybird.s3.amazonaws.com/artwork/Jevs/full/haunted-wolf-house.jpeg)  
+  
+  
 
 # Acknowledgements  
 ------  
+* We would like to thank our wonderful Facilitator Kasia for all her help, advice and enthusiasm!  
+* We would also like to thank everyone involved in organising and running this Hackathon as it has been a fantastic learning experience!  
 
+  
 
 
 [:top:](#funny-bones)
