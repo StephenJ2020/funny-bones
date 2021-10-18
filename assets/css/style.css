@@ -5,14 +5,13 @@ body {
 }
 
 #home {
-    height: 100vh;
-    /* overflow-x: hidden; */
+    height: 89vh;
     font-family: 'Griffy', sans-serif;
 }
 
 img[usemap] {
     width: 100vw;
-    height: 100vh;
+    height: 89vh;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -21,6 +20,36 @@ img[usemap] {
 #help {
     background: url(../../assets/images/help.jpg) no-repeat fixed center;
     background-size: cover;
+}
+
+/* Homepage Media Queries */
+
+@media (min-width: 768px) {
+    img[usemap] {
+        width: 100vw;
+        height: 89vh;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    #home {
+        height: 89vh;
+        font-family: 'Griffy', sans-serif;
+    }
+}
+
+@media (min-width: 1200px) {
+    img[usemap] {
+        width: 100vw;
+        height: 90vh;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    #home {
+        height: 90vh;
+        font-family: 'Griffy', sans-serif;
+    }
 }
 
 /* -------- Animation flying bats ----
@@ -529,6 +558,16 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 
 .modal-footer {
     display: inline-block;
+}
+
+#bg-modal-footer {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+#modal-footer-heading {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #starRating li {
