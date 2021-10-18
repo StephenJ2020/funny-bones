@@ -2,7 +2,9 @@
 
 body {
     font-family: 'Arvo', sans-serif;
+
     
+
 }
 #home {
     height: 89vh;
@@ -11,11 +13,11 @@ body {
 }
 
 img[usemap] {
-    background: no-repeat center center fixed;
-    background-size: cover;
     width: 100vw;
+    height: 89vh;
+    background-size: cover;
     overflow: hidden;
-    height: 100vh;
+    position: relative;
 }
 
 #help {
@@ -23,10 +25,206 @@ img[usemap] {
     background-size: cover;
 }
 
+/* Override Bootstrap css */
+.row {
+    --bs-gutter-x: 0;
+}
+
+/* Homepage Media Queries */
+
+@media (min-width: 768px) {
+    img[usemap] {
+        width: 100vw;
+        height: 89vh;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    #home {
+        height: 89vh;
+        overflow-x: hidden;
+        font-family: 'Griffy', sans-serif;
+    }
+}
+
+@media (min-width: 1200px) {
+    img[usemap] {
+        width: 100vw;
+        height: 90vh;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    #home {
+        height: 90vh;
+        overflow-x: hidden;
+        font-family: 'Griffy', sans-serif;
+    }
+}
+
+/* -------- Animation flying bats ----
+ Source https://codepen.io/andri-lly-jachn/pen/yLVVpGb*/
+
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Serif;
+    text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2s, 1s;
+    animation-delay: 2s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1s;
+    animation
+    delay: 3s, 1s
+}
+
+.snowflake:nth-of-type(10)
+    /* Demo Purpose Only*/
+.demo {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.demo a {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+.snowflake img {
+    height: 40px;
+    bottom: 0;
+    display: block;
+}
+
 /*-- Navbar ---*/
 #navbar {
     background-color: #ff9e00 !important;
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar {
@@ -63,7 +261,7 @@ a.nav-link:hover {
     color: #000;
 }
 
-/*--- Home page button ---*/ 
+/*--- Home page button ---*/
 
 .copyright {
     background-color: #ff9e00;
@@ -107,6 +305,7 @@ a.nav-link:hover {
     letter-spacing: 2px;
 }
 
+
 .end-p {
     font-size: 1.2rem;
     text-align: center;
@@ -118,102 +317,174 @@ a.nav-link:hover {
   width: 100%;
   height: 93vh; 
   background: url('../images/space_evader.png') center center / cover no-repeat fixed;
+
+/*-- Help Page Css --*/
+#help {
+  background: url(../images/help.jpg) no-repeat center center fixed;
+  background-size: cover;
+
   overflow: hidden;
+  height: 100vh;
+  width: 100%;
   position: relative;
 }
+/*-- Accordion --*/
+#my-accordion {
+  margin-top: 150px;
+  margin-right: 200px;
+  }
 
+.accordion-button {
+  color: #ff8500;
+  background-color:#5a189a;
+  text-align: center;
+}
+
+.accordion-collapse.collapse.show {
+  background-color:#ff8500;
+}
+
+.accordion-header {
+  color: #9d4edd;
+}
+/*-- Help Forms --*/
+.mb-1 {
+  margin-top: 150px;
+}
+h1 {
+  margin-top: 100px
+}
 /*Source https://www.codegrepper.com/code-examples/css/how+to+make+dark+overlay+css*/
-/* .whack-a-ghost__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #5f5141;
+.help-overlay {
+  position: 0;
+  top: 100;
+  left: 100;
+  width: 50%;
+  height: 10%;
+  background-color: #791a91;
   opacity: 0.8;
-} */
+}
+
+.form-row {
+margin-top: 350px;
+}
+
+.pos {
+  margin-top:0px;
+}
+
+.form-check {
+  padding-left: 0px;
+}
+
+.exampleFormControlInput1 {
+  color:#5a189a
+}
+
+/*-- Whack-A-Ghost --*/
+
+.bg-image {
+    width: 100%;
+    height: 93vh;
+    background: url('../images/space_evader.png') center center / cover no-repeat fixed;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 .h1 {
-  text-align: center;
-  font-size: 4rem;
-  color: #fff;
-  line-height: 1.5;
-  margin-top: 100px;
-  margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .score {
-  background: rgba(255,255,255,0.2);
-  padding: 0 3rem;
-  line-height: 1;
-  border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 3rem;
+    line-height: 1;
+    border-radius: 1rem;
 }
 
-#btn-ghost{
-  font-size: 3rem;
-  align-self: center;
-  color: #5a189a;
-  background-color: #ff8500;
+#btn-ghost {
+    font-size: 3rem;
+    align-self: center;
+    color: #5a189a;
+    background-color: #ff8500;
 }
 
 .game {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 40px auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
 }
 
 .pop {
-  flex: 1 0 31%;
-  overflow: hidden;
-  position: relative;
+    flex: 1 0 31%;
+    overflow: hidden;
+    position: relative;
 }
 
 .pop:after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  z-index: 2;
-  bottom: -30px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
 }
 
 .ghost {
-  background: url('../images/ghost-black.png') bottom center no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 70%;
-  transition:all 0.45s;
+    background: url('../images/ghost-black.png') bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 70%;
+    transition: all 0.45s;
 }
 
 .pop.up .ghost {
-  top: 0;
+    top: 0;
 }
 
 /* Whack-A-Ghost Media Queries */
 
 @media (min-width: 768px) {
-  .game {
-    width: 600px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px auto;
-  }
+    .game {
+        width: 600px;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px auto;
+    }
 }
 
 @media (min-width: 1200px) {
-  .game {
-    width: 850px;
-    height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px auto;
-  }
+    .game {
+        width: 850px;
+        height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+    }
+    .bg-image {
+        width: 100%;
+        height: 94vh;
+        background: url('../images/space_evader.png') center center / cover no-repeat fixed;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 /* -------------- FLIPPING CARDS CSS ----------------- */
@@ -225,14 +496,14 @@ a.nav-link:hover {
 }
 
 .flipping-cards__container {
-	max-width: 100vw;
+    max-width: 100vw;
 }
 
 @media (min-width: 426px) {
-	.flipping-cards__container {
-		max-width: 70vw;
-		margin: 0 auto;
-	}
+    .flipping-cards__container {
+        max-width: 70vw;
+        margin: 0 auto;
+    }
 }
 
 .flipping-cards__card-img {
@@ -244,12 +515,12 @@ a.nav-link:hover {
 }
 
 .flipping-cards__header {
-	max-width: 70vw;
+    max-width: 70vw;
 }
 
 .flipping-cards h2 {
-	font-family: 'Creepster', sans-serif;
-	font-size: 3rem;
+    font-family: 'Creepster', sans-serif;
+    font-size: 3rem;
 }
 
 /*Overwrite Boostrap classes*/
@@ -270,67 +541,67 @@ a.nav-link:hover {
 source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*/
 
 .js-card {
-	background: #141214;
-	color: #ffffff;
-	border-radius: 5px;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-	text-decoration: none;
-	list-style: none;
-	margin: 1rem;
+    background: #141214;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
 }
 
 .deck .js-card img {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .deck .js-card.open {
-	transform: rotateY(0);
-	background: #02b3e4;
-	cursor: default;
-	animation-name: flipInY;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .75s;
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+    animation-name: flipInY;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
 }
 
 .deck .js-card.show {
-	font-size: 33px;
-	visibility: visible;
+    font-size: 33px;
+    visibility: visible;
 }
 
 .deck .js-card.show img {
-	visibility: visible;
+    visibility: visible;
 }
 
 .deck .js-card.match {
-	cursor: default;
-	background: #E5F720;
-	font-size: 33px;
-	animation-name: rubberBand;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .75s;
+    cursor: default;
+    background: #E5F720;
+    font-size: 33px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
 }
 
 .deck .js-card.match img {
-	visibility: visible;
+    visibility: visible;
 }
 
 
 .deck .js-card.unmatched {
-	animation-name: pulse;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .75s;
-	background: #e2043b;
+    animation-name: pulse;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+    background: #e2043b;
 }
 
 .deck .js-card.disabled {
-	pointer-events: none;
+    pointer-events: none;
 }
 
 
@@ -340,31 +611,31 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 
 
 .score-panel {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .score-panel .stars {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .score-panel .stars li {
-	list-style: none;
-	display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 
 .score-panel .restart {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .fa-star {
-	color: #FFD700;
+    color: #FFD700;
 }
 
 .timer {
-	display: inline-block;
-	margin: 0 1rem;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 
@@ -374,123 +645,140 @@ source https://github.com/sandraisrael/Memory-Game-fend/blob/master/css/app.css*
 
 
 .overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .overlay:target {
-	visibility: visible;
-	opacity: 1;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-title {
-	font-family: 'Creepster', sans-serif;
+    font-family: 'Creepster', sans-serif;
 }
 
 .modal-content {
-	background-color: #ff8500;
+    background-color: #ff8500;
+    font-weight: bold;
 }
 
 .show {
-	visibility: visible !important;
-	opacity: 100 !important;
+    visibility: visible !important;
+    opacity: 0.85 !important;
+}
+
+.modal-footer {
+    display: inline-block;
+}
+
+#bg-modal-footer {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+#modal-footer-heading {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #starRating li {
-	display: inline-block;
+    display: inline-block;
 }
 
 #play-again {
-	background-color: #141214;
-	padding: 0.7rem 1rem;
-	font-size: 1.1rem;
-	display: block;
-	margin: 0 auto;
-	width: 50%;
-	font-family: 'Gloria Hallelujah', cursive;
-	color: #ffffff;
-	border-radius: 5px;
+    background-color: #141214;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 /* animations */
 @keyframes flipInY {
-	from {
-		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-		animation-timing-function: ease-in;
-		opacity: 0;
-	}
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
 
-	40% {
-		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-		animation-timing-function: ease-in;
-	}
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
 
-	60% {
-		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-		opacity: 1;
-	}
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
 
-	80% {
-		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-	}
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
 
-	to {
-		transform: perspective(400px);
-	}
+    to {
+        transform: perspective(400px);
+    }
 }
 
 @keyframes rubberBand {
-	from {
-		transform: scale3d(1, 1, 1);
-	}
+    from {
+        transform: scale3d(1, 1, 1);
+    }
 
-	30% {
-		transform: scale3d(1.25, 0.75, 1);
-	}
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
 
-	40% {
-		transform: scale3d(0.75, 1.25, 1);
-	}
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
 
-	50% {
-		transform: scale3d(1.15, 0.85, 1);
-	}
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
 
-	65% {
-		transform: scale3d(.95, 1.05, 1);
-	}
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
 
-	75% {
-		transform: scale3d(1.05, .95, 1);
-	}
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
 
-	to {
-		transform: scale3d(1, 1, 1);
-	}
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 @keyframes pulse {
-	from {
-		transform: scale3d(1, 1, 1);
-	}
+    from {
+        transform: scale3d(1, 1, 1);
+    }
 
-	50% {
-		transform: scale3d(1.2, 1.2, 1.2);
-	}
+    50% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
 
-	to {
-		transform: scale3d(1, 1, 1);
-	}
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .copyright:hover {
     color: #fff;
 }
+
 
