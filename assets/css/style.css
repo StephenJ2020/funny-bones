@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap');
 
 body {
-    font-family: 'Oswald', sans-serif;
-    overflow-x: hidden;
-    height: calc(100vh-170px);
-    width: 100vw;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: Creepster, sans-serif;
+    font-family: 'Arvo', sans-serif;
+    
 }
 #home {
     height: 89vh;
-    overflow: hidden;
+    font-family: 'Griffy', sans-serif;
+
 }
 
 img[usemap] {
@@ -82,22 +78,6 @@ a.nav-link:hover {
     color: #000;
 }
 
-/* .play-btn {
-    background: white;
-    color: black;
-} */
-
-/* .overlay-final-page {
-    height: 80%;
-    width: 60%;
-    
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
-} */
-
 #story-page img{
     background: no-repeat center center fixed;
     background-size: cover;
@@ -131,21 +111,12 @@ a.nav-link:hover {
     font-size: 1.2rem;
     text-align: center;
 }
-/* #story-page {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background: no-repeat center center fixed;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-} */
 
 /*-- Whack-A-Ghost --*/
 
 .bg-image{
   width: 100%;
-  height: 100vh; 
+  height: 93vh; 
   background: url('../images/space_evader.png') center center / cover no-repeat fixed;
   overflow: hidden;
   position: relative;
