@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Griffy&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap');
 
 body {
     font-family: 'Arvo', sans-serif;
-}
 
+    
+
+}
 #home {
     height: 89vh;
     font-family: 'Griffy', sans-serif;
+
 }
 
 img[usemap] {
@@ -242,6 +245,7 @@ a.nav-link {
 
 .navbar-brand img {
     height: 2.7rem;
+    width: 3.1rem;
     padding-left: 0.5rem;
 }
 
@@ -249,9 +253,6 @@ a.nav-link:hover {
     color: #fff;
 }
 
-a.nav-link:active {
-    color: rgb(44, 43, 43);
-}
 
 .navbar-toggler {
     font-size: 2.2rem;
@@ -275,16 +276,53 @@ a.nav-link:active {
     color: #000;
 }
 
-.play-btn {
-    background: white;
-    color: black;
+#story-page img{
+    background: no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
 }
 
+.text-block {
+    position: absolute;
+    top: 15vh;
+    bottom: 15vh;
+    margin-left: 15%;
+    margin-right: 15%; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+#story-page p {
+    letter-spacing: 2px;
+}
+
+
+.end-p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*-- Whack-A-Ghost --*/
+
+.bg-image{
+  width: 100%;
+  height: 93vh; 
+  background: url('../images/space_evader.png') center center / cover no-repeat fixed;
 
 /*-- Help Page Css --*/
 #help {
   background: url(../images/help.jpg) no-repeat center center fixed;
   background-size: cover;
+
   overflow: hidden;
   height: 100vh;
   width: 100%;
