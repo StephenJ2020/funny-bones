@@ -1,55 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" type="image/png" href="assets/images/pumpkin.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Funny Bones</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" type="image/png" href="assets/images/pumpkin.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Funny Bones</title>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Navigation Bar-->
-    <header>
-        <nav id="navbar" class="navbar navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/castle-house.png"
-                        alt="Halloween haunted house" title="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_target"
-                    aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="collapse_target">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="space_evader.html">Space Evader</a></li>
-                        <li class="nav-item"><a class="nav-link" href="flipping_cards.html">Flipping Cards</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="whack_a_ghost.html">Whack A Ghost</a></li>
-                        <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
-                    </ul>
+        <!-- Navigation Bar-->
+        <header>
+            <nav id="navbar" class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex" href="index.html"><img src="assets/images/castle-house.png"
+                            alt="Halloween haunted house and glowing pumpkins in the night" title="Logo"></a>
+                    <div class="d-flex me-2">
+                        <div class="nav-item"><a class="nav-link" href="help.html">Help</a></div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+        <main>
+            <article class="col bg-image">
+                <section>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    This is the main content of the body of the Modal!!!!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </section>
+                <section>
+                    <div class="row whack-a-ghost__overlay">
+                        <div>
+                            <!-- Adapted from - https://github.com/wesbos/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/index-START.html -->
+                            <div>
+                                <p class="h1">Whack-A-Ghost! <span class="score">0</span></p>
+                            </div>
+                            <div class="container">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-lg btn-primary text-center" onClick="startGame()"><strong>Start!</strong></button>  <!--id="btn-ghost"-->
+                                    <button type="button" class="btn btn-lg btn-primary text-center"
+                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        Instructions!
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="game">
+                                <div class="pop pop1">
+                                  <div class="ghost"></div>
+                                </div>
+                                <div class="pop pop2">
+                                  <div class="ghost"></div>
+                                </div>
+                                <div class="pop pop3">
+                                  <div class="ghost"></div>
+                                </div>
+                                <div class="pop pop4">
+                                  <div class="ghost"></div>
+                                </div>
+                                <div class="pop pop5">
+                                  <div class="ghost"></div>
+                                </div>
+                                <div class="pop pop6">
+                                  <div class="ghost"></div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </section>
+                <section>
+
+                </section>
+            </article>
+        </main>
+
+        <script src="assets/js/ghost.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
 
 
+<<<<<<< HEAD
     <div id="cards" class="container-fluid px-0 h-100">
         <div class="row text-white h-100">
             <img class="w-100" src="assets/images/whack_a_ghost.png" alt="An empty room covered in cobwebs and a portait of a scientist and his son">
             <div>
+=======
+>>>>>>> main
 
-                
-            </div>
-        </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-</body>
 
-</html>
+                            
