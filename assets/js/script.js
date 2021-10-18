@@ -35,10 +35,10 @@ function mad_scientist() {
 
 
 function jump () {
-    if (character.classList != "animate"){
-    character.classList.add("animate");
+    if (character.classList != "animate-jump"){
+    character.classList.add("animate-jump");
     setTimeout(function(){
-        character.classList.remove("animate")
+        character.classList.remove("animate-jump")
     },500)
 }
 }
