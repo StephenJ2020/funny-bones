@@ -2,14 +2,10 @@
 
 body {
     font-family: 'Arvo', sans-serif;
-
-    
-
 }
 #home {
     height: 89vh;
     font-family: 'Griffy', sans-serif;
-
 }
 
 img[usemap] {
@@ -253,6 +249,9 @@ a.nav-link:hover {
     color: #fff;
 }
 
+a.nav-link:active {
+    color: rgb(44, 43, 43);
+}
 
 .navbar-toggler {
     font-size: 2.2rem;
@@ -276,12 +275,17 @@ a.nav-link:hover {
     color: #000;
 }
 
+.play-btn {
+    background: white;
+    color: black;
+}
+
 #story-page img{
     background: no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
     overflow: hidden;
-    height: 100vh;
+    height: 89vh;
     position: relative;
     background-size: cover;
 }
@@ -311,12 +315,6 @@ a.nav-link:hover {
     text-align: center;
 }
 
-/*-- Whack-A-Ghost --*/
-
-.bg-image{
-  width: 100%;
-  height: 93vh; 
-  background: url('../images/space_evader.png') center center / cover no-repeat fixed;
 
 /*-- Help Page Css --*/
 #help {
@@ -380,6 +378,7 @@ margin-top: 350px;
 .exampleFormControlInput1 {
   color:#5a189a
 }
+
 
 /*-- Whack-A-Ghost --*/
 
