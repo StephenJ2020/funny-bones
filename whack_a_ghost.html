@@ -20,41 +20,51 @@
             <nav id="navbar" class="navbar navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand d-flex" href="index.html"><img src="assets/images/castle-house.png"
-                            alt="Halloween haunted house and glowing pumpkins in the night" title="Logo"></a>
+                        alt="Halloween haunted house and glowing pumpkins in the night"
+                        title="Logo"><span class="d-none d-md-inline-block">&nbsp; Funny Bones - Interactive Halloween Story!</span></a>
                     <div class="d-flex me-2">
                         <div class="nav-item"><a class="nav-link" href="help.html">Help</a></div>
                     </div>
                 </div>
             </nav>
         </header>
+
         <main>
             <article class="col bg-image">
                 <section>
-                    
                     <!-- Modal -->
                     <div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <h5 class="modal-title" id="staticBackdropLabel">Well done, you found your way into the Living Room.
+                                        It has a rustic charm but don't let that fool you, there's definitely something strange going on
+                                        in here when nobody else is about!
+                                    </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    This is the main content of the body of the Modal!!!!!
+                                    <p id="modal-footer-heading">How to Play:</p>
+                                    <p>
+                                        This challenge is very straightforward, simple press the "Play" button once you are ready to begin.
+                                        Spooky ghosts will suddenly appear out of thin air and it is your job to Whack as many of them as possible
+                                        within 12 seconds.
+                                    </p>
+                                    <p>
+                                        Simply use your mouse or your finger (if your device is touch-screen) to click/tap on the ghosts as they appear.
+                                        Your score will be displayed at the top of the page and you must Whack 5 or more ghosts in order to successful 
+                                        complete this challenge.
+                                    </p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
+                                <div class="modal-footer col-md-12 text-center">
+                                    <button type="button" class="btn btn-lg btn-success"
+                                        data-bs-dismiss="modal"><strong>Understood</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    
-
                 </section>
                 <section>
                     <div class="row">
@@ -65,8 +75,8 @@
                             </div>
                             <div class="container">
                                 <div class="col-md-12 text-center">
-                                    <button class="btn btn-lg btn-primary text-center" onClick="startGame()"><strong>Start!</strong></button>  <!--id="btn-ghost"-->
-                                    <button type="button" class="btn btn-lg btn-primary text-center"
+                                    <button class="btn btn-lg btn-success text-center" onClick="startGame()"><strong>Start!</strong></button>  <!--id="btn-ghost"-->
+                                    <button type="button" class="btn btn-lg btn-secondary text-center"
                                         data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                         Instructions!
                                     </button>
@@ -92,14 +102,8 @@
                                   <div class="ghost"></div>
                                 </div>
                             </div>
-
-                            
-
                         </div>
                     </div>
-                </section>
-                <section>
-
                 </section>
             </article>
         </main>
@@ -110,9 +114,4 @@
     </body>
 
 </html>
-
-
-
-
-
-                            
+ 
