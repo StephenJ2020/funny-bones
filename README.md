@@ -89,12 +89,12 @@ The app consists of 5 pages in total.
 ### The Game Pages
 3 of the pages are "game" pages, that is, they each display a different type of simple game.  
 The 3 games that we have decided on are as follows:  
-#### A Maze Game  
-The user is asked to guide their pointer through a "maze" in order to get to the middle within a given time period.
-#### Smashing Pumpkins Game
-Inspired by whac-a-mole, the user must click on the disappearing pumpkin heads before the time runs out.
-#### Night Invaders Game  
-Inspired by space invaders, the user must avoid the scary bats whilst killing a certain amount in a given time.
+#### Flipping Cards  
+The user is asked to memorise the position of cards and click on the pairs.
+#### Whack-a-Ghost
+Inspired by whac-a-mole, the user must click on the disappearing ghosts.
+####  Jump! Game  
+The user must jump over the moving pumpkins.
 
 ### The Landing Page
 The main page that displays the picture of the haunted house and contains various pop-ups and modals to tell the story and provide interactivity.
@@ -164,25 +164,59 @@ Hues of orange, purple and black were chosen for this project as they are tradit
 ------  
 
 ## Implemented Features
-*   
-*   
-*   
-*   
+*   Landing Page  
+The page has a modal that pops up on the page loading. The modal has scrolling text that introduces the story as well
+as tick boxes to select the challenges that you have completed.  Finally, there is a card that displays tips for how
+to play the game.
+The main page itself displays an image of a haunted house, of which the windows and doors are clickable and each of which takes you to one of the three different games.
+
+*   Whack-a-ghost
+Game in which the user is required to click on moving images.  If they manage to do this enough times they are deemed to have passed the challenge.
+There is also a modal displaying instructions that can be toggled with a button.
+
+*   Jump!
+Game in which the user is required to jump over the moving image.  If they are not successful, they are presented with 
+a button to try again.  If they are successful 5 times in a row, a message is displayed displaying a success message.
+
+*   Flipping Cards
+The user is presented with 6 cards and must remember their order once they have been clicked.  Once successful, a modal
+pops up presenting information relating to the game that has just finished.
+
+*   Final Page
+There is a different background image from the main page.  There is scrollable text on a semi-opaque background that 
+completes the story. 
+
+*   Help Page
+There is a bootstrap accordion that is split into three sections each of which referring to one of the games.  On being 
+clicked each section displays intructions for the games.
+
   
   
 ## Future Features
   
-*   
-*   
-*   
-*   
+*   Unlock Feature  
+In this version the final page is accessible by clicking the button that is displayed on the main page modal.  The 
+original plan, however, was for each game to input a code and for the three codes to be requested before entry is granted
+to the final page.
+
+*   Jump! Game  
+The Jump! game originally was intended to have different heights of moving objects in order to lend variety to the game.
+
   
   
 # Bugs & Fixes  
 ------  
 **Bugs and fixes to go here**  
-  
-  
+
+Issue:  The live site was not displaying the images properly for the Jump! Game even though they were displaying when
+the site was run from individual machines.   
+Fix:  The images were changed from being imported via a fixed path to a relative path.
+
+Issue:  Trying to merge the Jump! game branch to the main branch caused several conflicts that were proving difficult to 
+resolve.  When attempting to resolve the conflicts a chunk of code was deleted.  
+Fix:  Import the deleted code from the backup and resolve the conflicts manually in github browser rather than in the 
+gitpod file.
+
   
 [:top:](#funny-bones)
 
@@ -291,12 +325,20 @@ $ git clone https://github.com/StephenJ2020/funny-bones
 
 * [Image map tool](https://www.image-map.net/)
 * To make image map responsive [RWD Image Maps](https://github.com/stowball/jQuery-rwdImageMaps)
+
+
+* Jump!
+  - [Jump! tutorial](https://www.youtube.com/watch?v=bG2BmmYr9NQ&t=300s&ab_channel=KnifeCircus)  
+  - The above tutorial was used as inspiration for the Jump! game.
+
+
 * [Image for Jump Game](https://storybird.s3.amazonaws.com/artwork/Jevs/full/scientist-haunted-house.jpeg)  
 * [Image for Whack-a-ghost](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3022922d-d7d2-447e-8a28-343d228f0b0e/d5jlspq-e8627073-b94d-4efc-8d00-356c544bcc3d.png)  
 * [Image of ghost](https://cdn.imgbin.com/19/14/15/imgbin-ghost-silhouette-ghost-eShcjvqbimNytaYEVJfQPYt6k.jpg)  
 * [Image for Memory Game](https://storybird.s3.amazonaws.com/artwork/Jevs/full/haunted-wolf-house.jpeg)  
   
   
+
 
 # Acknowledgements  
 ------  
