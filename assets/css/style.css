@@ -98,6 +98,11 @@ a.nav-link:active {
   width: 600px;
   margin-top: 12rem;
   text-align: center;
+  background-color: #ff8500;
+  border-radius: 10px;
+  font-family: 'Creepster', sans-serif;
+  border: solid black 6px;
+  padding: 20px;
 }
 
 #game-grid {
@@ -114,10 +119,10 @@ a.nav-link:active {
 
 
 #character {
-  width:100px;
+  width: 100px;
   height: 150px;
   position: relative;
-  top: calc(50vh - 152px);
+  top: calc(50vh - 162px);
   left: 0px;
   background-image: url('/assets/images/mad_scientist.png');
   background-repeat: no-repeat;
@@ -132,7 +137,7 @@ a.nav-link:active {
   width: 60px;
   height: 60px;
   position: relative;
-  top: calc(50vh - 62px);
+  top: calc(50vh - 72px);
   left: 718px;
   animation: block 1s 5 linear;
   background-image: url('/assets/images/pumpkin.png');
@@ -145,10 +150,10 @@ a.nav-link:active {
 }
 
 @keyframes jump {
-  0%{top: calc(50vh - 152px);}
+  0%{top: calc(50vh - 162px);}
   30%{top: 100px;}
   70%{top: 100px;}
-  100%{top: calc(50vh - 152px);}
+  100%{top: calc(50vh - 162px);}
 }
 
 #success {
@@ -157,6 +162,9 @@ a.nav-link:active {
   background-color: orange;
   color: white;
   margin: auto;
+  border-radius: 10px;
+  font-family: 'Creepster', sans-serif;
+  font-size: 2rem;
 }
 
 #replay {
@@ -169,6 +177,23 @@ a.nav-link:active {
   left: calc(50vw - 150px);
 }
 
+a:hover {
+  border: solid black 1px;
+}
+
+#replay-button {
+  text-align: center;
+  background-color: #ff8500;
+  border-radius: 10px;
+  font-family: 'Creepster', sans-serif;
+  border: solid black 6px;
+  padding: 20px;
+}
+
+#replay-button:hover {
+  border: solid white 5px;
+}
+
 
 
 /*------------media queries-----------------------*/
@@ -177,4 +202,32 @@ a.nav-link:active {
     .navbar {
       opacity: 1.0;
     }
+}
+
+
+@media only screen and (max-width:700px) {
+  #character {
+    width: 50px;
+    height: 75px;
+    position: relative;
+    top: calc(50vh - 87px);
+  }
+  #block {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: calc(50vh - 42px);
+  }
+
+  @keyframes block {
+    0%{left: 650px;}
+    100%{left: -40px;}
+  }
+  
+  @keyframes jump {
+    0%{top: calc(50vh - 162px);}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: calc(50vh - 162px);}
+  }
 }

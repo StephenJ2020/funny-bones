@@ -23,6 +23,11 @@ function mad_scientist() {
     myTimeOut = setTimeout(function(){ 
         var finish_message = document.getElementById("success");
         finish_message.hidden = false;
+        var scientist = document.getElementById("character");
+        console.log(scientist)
+        scientist.setAttribute("style","width:300px");
+        scientist.setAttribute("style","height:0px");
+        scientist.setAttribute("style","top:40px");
     }, 5300);
     myTimeOut();
 }
@@ -43,9 +48,18 @@ var check_dead = setInterval(function(){
     var height = parseInt(window.getComputedStyle(game_grid).getPropertyValue("height"));
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"))
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"))
-    var characterTopMax = height - (150 + 60);
+    var viewport_width = window.innerWidth;
+    console.log(viewport_width);
+    if (viewport_width < 700) {
+        var characterTopMax = height - (75 + 30);
+        var width_value = 50;
+    }
+    if (viewport_width > 700) {
+        var characterTopMax = height - (150 + 60);
+        var width_value = 100;
+    }
     console.log(characterTopMax)
-    if (blockLeft<100 && blockLeft>0 && characterTop>= characterTopMax){
+    if (blockLeft<width_value && blockLeft>0 && characterTop>= characterTopMax){
         replay = document.getElementById("replay");
         game_grid.hidden = true;
         replay.hidden = false;
