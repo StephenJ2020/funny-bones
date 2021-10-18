@@ -337,7 +337,7 @@ a.nav-link:active {
 /*---------------background-image-----------------*/
 
 .background-image-jump {
-    background: url('/assets/images/space_invader.jpeg') no-repeat fixed center center;
+    background: url('../images/space_invader.jpeg') no-repeat fixed center center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -385,7 +385,7 @@ a.nav-link:active {
   position: relative;
   top: calc(50vh - 162px);
   left: 0px;
-  background-image: url('/assets/images/mad_scientist.png');
+  background-image: url('../images/mad_scientist.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 60px;
@@ -402,7 +402,7 @@ a.nav-link:active {
   top: calc(50vh - 72px);
   left: 718px;
   animation: block 1s 5 linear;
-  background-image: url('/assets/images/pumpkin.png');
+  background-image: url('../images/pumpkin.png');
   background-size: cover;
 }
 
@@ -458,7 +458,7 @@ a.nav-link:active {
 
 #finished_pic {
     width: 300px;
-    background-image: url(/assets/images/mad_scientist.png);
+    background-image: url(../images/mad_scientist.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -691,7 +691,7 @@ margin-top: 350px;
     .bg-image {
         width: 100%;
         height: 94vh;
-        background: url('../images/space_evader.png') center center / cover no-repeat fixed;
+        background: url('../images/whack_a_ghost.png') center center / cover no-repeat fixed;
         position: relative;
         overflow: hidden;
         background-size: cover;
